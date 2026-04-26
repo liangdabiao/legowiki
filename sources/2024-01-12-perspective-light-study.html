@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>2024-01-12-perspective-light-study</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="乐高搭建合集 Wiki"/><meta property="og:title" content="2024-01-12-perspective-light-study"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2024-01-12-perspective-light-study"/><meta name="twitter:description" content="透视与光影研究 — 北极场景的深度解析 一句话总结：深度研究乐高场景的透视和光影表现技术，以北极场景为案例探索如何在乐高创作中运用透视和光线。 完整内容 距离我在BrickNerd的第一篇专题文章已经过去五个月了，我刚刚完成了我迄今为止最大型作品——北极——的下一个主要部分。现在我已经完成了精灵工坊、前景地基，并且完成了微缩背景景观的制作（点击查看第一部分了解更多详情）。一切都在顺利推进中。 接下来要做的是完成前景的树木，建造背景幕布，添加灯光，并将它带到我的第一个乐高展会BrickCon。 但就在我准备将北极MOC收起来的时候，我即将踏上生日之旅——温暖的南加州公路旅行。距离BrickCon..."/><meta property="og:description" content="透视与光影研究 — 北极场景的深度解析 一句话总结：深度研究乐高场景的透视和光影表现技术，以北极场景为案例探索如何在乐高创作中运用透视和光线。 完整内容 距离我在BrickNerd的第一篇专题文章已经过去五个月了，我刚刚完成了我迄今为止最大型作品——北极——的下一个主要部分。现在我已经完成了精灵工坊、前景地基，并且完成了微缩背景景观的制作（点击查看第一部分了解更多详情）。一切都在顺利推进中。 接下来要做的是完成前景的树木，建造背景幕布，添加灯光，并将它带到我的第一个乐高展会BrickCon。 但就在我准备将北极MOC收起来的时候，我即将踏上生日之旅——温暖的南加州公路旅行。距离BrickCon..."/><meta property="og:image:alt" content="透视与光影研究 — 北极场景的深度解析 一句话总结：深度研究乐高场景的透视和光影表现技术，以北极场景为案例探索如何在乐高创作中运用透视和光线。 完整内容 距离我在BrickNerd的第一篇专题文章已经过去五个月了，我刚刚完成了我迄今为止最大型作品——北极——的下一个主要部分。现在我已经完成了精灵工坊、前景地基，并且完成了微缩背景景观的制作（点击查看第一部分了解更多详情）。一切都在顺利推进中。 接下来要做的是完成前景的树木，建造背景幕布，添加灯光，并将它带到我的第一个乐高展会BrickCon。 但就在我准备将北极MOC收起来的时候，我即将踏上生日之旅——温暖的南加州公路旅行。距离BrickCon..."/><meta property="og:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://lego-wiki.pages.dev"/><meta property="og:url" content="https://https//lego-wiki.pages.dev/sources/2024-01-12-perspective-light-study"/><meta property="twitter:url" content="https://https//lego-wiki.pages.dev/sources/2024-01-12-perspective-light-study"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="透视与光影研究 — 北极场景的深度解析 一句话总结：深度研究乐高场景的透视和光影表现技术，以北极场景为案例探索如何在乐高创作中运用透视和光线。 完整内容 距离我在BrickNerd的第一篇专题文章已经过去五个月了，我刚刚完成了我迄今为止最大型作品——北极——的下一个主要部分。现在我已经完成了精灵工坊、前景地基，并且完成了微缩背景景观的制作（点击查看第一部分了解更多详情）。一切都在顺利推进中。 接下来要做的是完成前景的树木，建造背景幕布，添加灯光，并将它带到我的第一个乐高展会BrickCon。 但就在我准备将北极MOC收起来的时候，我即将踏上生日之旅——温暖的南加州公路旅行。距离BrickCon..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXGxlZ28tbGxtLXdpa2lcXHF1YXJ0elxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://https://lego-wiki.pages.dev/index.xml"/></head><body data-slug="sources/2024-01-12-perspective-light-study"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">乐高搭建合集 Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1181"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1181" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2024 01 12 perspective light study</a></div></nav><h1 class="article-title">2024-01-12-perspective-light-study</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-24T16:00:00.000Z">2026年4月25日</time><span>23分钟阅读</span></p><ul class="tags"><li><a href="../tags/透视" class="internal tag-link">透视</a></li><li><a href="../tags/光影" class="internal tag-link">光影</a></li><li><a href="../tags/摄影研究" class="internal tag-link">摄影研究</a></li><li><a href="../tags/北极" class="internal tag-link">北极</a></li><li><a href="../tags/场景设计" class="internal tag-link">场景设计</a></li></ul></div></div><article class="popover-hint"><h1 id="透视与光影研究--北极场景的深度解析">透视与光影研究 — 北极场景的深度解析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#透视与光影研究--北极场景的深度解析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>一句话总结：深度研究乐高场景的透视和光影表现技术，以北极场景为案例探索如何在乐高创作中运用透视和光线。</p>
+</blockquote>
+<hr/>
+<h2 id="完整内容">完整内容<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#完整内容" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>距离我在BrickNerd的<a href="https://bricknerd.com/home/parkinsons-particular-perspective-the-story-of-a-talented-new-afol-9-28-22" class="external">第一篇专题文章<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>已经过去五个月了，我刚刚完成了我迄今为止最大型作品——北极——的下一个主要部分。现在我已经完成了精灵工坊、前景地基，并且完成了微缩背景景观的制作（<a href="https://bricknerd.com/home/a-study-in-perspective-a-snowy-journey-to-the-north-pole-1-10-24" class="external">点击查看第一部分<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>了解更多详情）。一切都在顺利推进中。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044906343-3JXH7B9ZD6S3YSDNZUAS/habitat+stacks.jpg" alt="habitat stacks.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044905253-FW611QCXVIGAGRB9PCVF/foreground-compilation.jpg" alt="foreground-compilation.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044905316-JPL1P084379GEQV8P0P1/front+base+layout+3.jpg" alt="front base layout 3.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044906130-5RXBXMZ0KKF49UYX6T6O/microscale+landscape.jpg" alt="microscale landscape.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044906343-3JXH7B9ZD6S3YSDNZUAS/habitat+stacks.jpg" alt="habitat stacks.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044905253-FW611QCXVIGAGRB9PCVF/foreground-compilation.jpg" alt="foreground-compilation.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044905316-JPL1P084379GEQV8P0P1/front+base+layout+3.jpg" alt="front base layout 3.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705044906130-5RXBXMZ0KKF49UYX6T6O/microscale+landscape.jpg" alt="microscale landscape.jpg"/></p>
+<p>接下来要做的是完成前景的树木，建造背景幕布，添加灯光，并将它带到我的第一个乐高展会BrickCon。</p>
+<p>但就在我准备将北极MOC收起来的时候，我即将踏上生日之旅——温暖的南加州公路旅行。距离BrickCon还有几个月——时间充足，对吗？好吧，我没有预料到在接下来的三到四个月里，由于生活中即将发生的事情，我几乎无法再拼搭任何乐高了……</p>
+<hr/>
+<h2 id="生活停摆的那段时间">生活停摆的那段时间<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#生活停摆的那段时间" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>几乎在我生日旅行回来后，我的伴侣感染了COVID，我的父母也感染了COVID（尽管他们在2000英里之外），然后我父亲因为心力衰竭进入重症监护。是的，一切都停止了。我又买了一张贵得离谱的机票。单程票变成了离家四周，我焦虑不安，对未来充满不确定。与此同时，我父亲在康复过程中一直在等待心脏移植，被困在医院，被各种管子和电线缠绕。</p>
+<p>这是一段充满压力、生活停摆、不确定的时期，但在某些方面，这也是一段有意义的时光——自从我搬到西雅图后，我和家人相处的时间比以往任何时候都多。除了拼搭套装，我没有精力做其他事情。几个月过去了。我最终退出了Bricks Cascade，这本来是我第一次参加乐高粉丝展会（但现在又错过了）。</p>
+<p>终于，好消息来了。我父亲成功接受了心脏移植，开始了漫长的康复过程。在几个不确定的月份之后，我终于回家了。情况看起来更积极了。是时候开始回归MOC拼搭了。</p>
+<p>我有幸参加了我最喜欢的栖息地挑战，这是由<a href="https://www.instagram.com/brickfambuilds/" class="external">Jen<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>和<a href="https://www.instagram.com/trickybricks/" class="external">TrickyBricks<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>举办的迪士尼栖息地挑战。栖息地拼搭是我作为拼搭者开始的地方，仍然是我每年最喜欢做的事情。在这样的时期，栖息地拼搭再适合不过了：它们不需要投入大量的时间和精力——这两样我现在都有限！我再次将它构建为一个集成堆叠，不像我最近做的其他一些作品那么精致，但仍然几乎无法区分各个单独的栖息地。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/b48adc32-2125-4768-a153-6c406a72f8da/Disney+Habitats+Stack.jpg" alt/></p>
+<p>迪士尼栖息地堆叠，包含爱丽丝梦游仙境（动物头代表她奔跑中躲避的 puffball 花）、罗宾汉，以及美女与野兽中的卢米亚和玫瑰。</p>
+<p>我希望将三个不同的角色融合在一起，让整个作品看起来有凝聚力，仿佛它们真的存在于同一个世界同一个地方。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/0fcd1edd-1086-456e-8bf8-2d7ca47ce1ce/Disney+habitats+-+lumiere.jpg" alt/></p>
+<p>美女与野兽中的卢米亚和玫瑰，使用灯光效果增强场景氛围。</p>
+<p>我选择了爱丽丝梦游仙境、罗宾汉（很高兴能得到这个人仔！），以及我最喜欢、最具艺术感和情感的栖息地——美女与野兽的卢米亚和玫瑰。这三个作品都有很多有趣的零件运用，包括动物头作为仙境 puffball 花头、撕裂的帆作为破窗帘、人仔树服装等等。（声明：没有乐高零件被损坏——帆本来就是设计成撕裂样子的！）</p>
+<p>北极MOC耐心地等待着我最终回归的那一天。</p>
+<p>与此同时，父亲终于出院了，我们旅行探望了两周。我甚至顺路花一天时间作为公众参观者去了BrickWorld芝加哥。整个夏天基本上都是恢复和伴侣的生活、恢复我的事业、参加夏季活动和旅行，以及在社区参加另一次SEALUG展览。</p>
+<p>后来，在CMF栖息地挑战中，我延续了迪士尼栖息地挑战的风格。我制作了一个类似风格的堆叠，可以与迪士尼堆叠无缝整合。这次是魔术师、诗人和驯鹰人。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/e03e1188-b120-40c5-8ea1-59a7beb40018/cmf-habitat-stack.jpg" alt/></p>
+<p>CMF栖息地挑战的最终堆叠。</p>
+<p>它还能与我之前的迪士尼栖息地堆叠无缝连接！</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/c8c3743f-f418-42c6-b28f-7a345f968824/cmf-disney-habitats.jpg" alt/></p>
+<p>所有这些小项目都是在我恢复正常生活的短暂间歇中完成的。再次强调，栖息地拼搭非常适合快速创作，充满细节，最终能完成一个完整的MOC。</p>
+<p>不知不觉就到了八月，我有点恐慌。如果你想知道为什么……9月7日就是BrickCon，我的家乡展会，也将是我第一次作为参展参与者参加的完整展会。终于到了！但我最大的新MOC几个月来都没碰过。</p>
+<hr/>
+<h2 id="第五阶段升起背景幕布打开灯光开始展示">第五阶段：升起背景幕布，打开灯光，开始展示<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第五阶段升起背景幕布打开灯光开始展示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>距离BrickCon的日子越来越近了。我的北极MOC还远未完成。时间飞快流逝——这就是我这一年的故事。我有了很多进展，但我还有很多事情要做：</p>
+<ul>
+<li>前景树木还没建造。- 天空背景甚至还没开始。- 我仍然想以某种方式加入灯光效果。- 我还必须为我的第一次展会做好准备，带上我一年半以来建造的其他所有作品，确保我能为MOC供电和展示，拿到我的第一块brick徽章并挂在挂绳上。</li>
+</ul>
+<p>滴答作响的时钟正是我重新开始拼搭北极所需要的。还有不到一个月，我全身心投入完成前景的树木。我有零件，需要重复枯燥的工作，拼搭几十个树枝来填充四棵大树。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/2f7746c2-dc39-4ab4-86be-5325637c4b1c/boughs-build.jpg" alt/></p>
+<p>树枝制作方法示例。</p>
+<p>树芯使用轴，结合2x2圆形砖、方向盘和八角条形板。底座沉入景观中。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/e77fdada-1d5e-4e31-811e-4fd96fd468ff/tree-cores.jpeg" alt/></p>
+<p>树芯示例。</p>
+<p>我很快意识到我不知道该如何逐渐收窄到顶部的尖点。所以我必须快速找到一个解决方案，让树顶从树枝过渡到尖顶。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705046626533-22PERQMARVKUDVJZA9QH/treetops.jpg" alt="treetops.jpg"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1705046626894-EY6X4UW9VWRD9T8409T3/treetops+2.jpg" alt="treetops 2.jpg"/></p>
+<p>完成这一步后，我开始研究背景幕布。我知道我想在地平线的山脉后面放置灯光效果，以便在展会的”灯光关闭”环节使用。所以我建造了一个底座，放在背景景观后面，仍然留有空间放置LED灯带。</p>
+<p>我尝试了不同的蓝色组合来建造天空，最终选择了中蓝色和浅皇家蓝色的组合。我非常喜欢这种更柔和、饱和度略低的蓝色外观，与整体感觉很相配。我测试了一小段天空，用浅青蓝色作为远山的天际线（用浅青蓝色来获得远山的雾感）。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/d3518ea1-67e7-43dd-b42c-d9675033cff4/backdrop-process-1.jpg" alt/></p>
+<p>背景幕布制作过程。</p>
+<p>我还需要解决地平线灯光问题。我想要连续的灯光，但发现乐高特定的照明选择不足且昂贵。我最终在亚马逊上找到了<a href="https://amzn.to/41Un9Zg" class="external">价格便宜的连续LED灯带<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，带USB连接器。我甚至可以根据需要剪成任意长度，如果没有插座可以插入充电宝。完美！</p>
+<p>我建造了一部分天空和灯光通道。然后我安装了灯光并进行测试。如你所见，它很神奇，效果很棒。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/2675df95-55ea-4f2e-9dad-aee353459176/lighting+background.jpg" alt/></p>
+<p>测试灯带。</p>
+<p>我甚至将相当一部分灯带埋在底座里，这样我就不需要剪太多，想着哪天可能可以用在另一个MOC上。不幸的是，这也给我带来了一点麻烦，因为用电池供电会消耗比需要更多的电量。总是在学习！</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/c8ba7fa8-a5fe-4c6d-9c9a-b910aa68a988/background-light.jpg" alt/></p>
+<p>可拆卸背景幕布，可以看到后山天际线后面的LED灯带。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/9d15c0a9-1c06-4351-8d01-39aaae05b70c/lights+1.jpg" alt/></p>
+<p>工坊照明。</p>
+<p>碰巧的是，我不得不等待更多蓝色零件运到才能完成天空，所以我开始处理其余的灯光（同时焦虑地想知道零件是否能及时到达）。工坊的照明相当简单——通过底座布线是更困难的部分。</p>
+<p>然后我想到了一个问题……圣诞老人的小屋需要一些灯光。我对此犹豫不决，因为我意识到我完全用实心16x16板在雪下面铺满了。我必须撕开景观，拿出大板，为电线创造一个洞。这一点都不好。</p>
+<p>我反复考虑，尝试了不同的灯光，试图说服自己它本来就不需要灯光……然后艺术取胜了。它需要照明。我知道它需要。我一直想找借口避免它。我必须挖出底座，做一个检修孔。唉。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/140be22e-ec50-40ac-a1f6-aa7a8e4cf1da/access+hole+reconstruction.jpg" alt/></p>
+<p>为圣诞老人小屋接线进行的最后一分钟重建手术。</p>
+<p>幸运的是，我很幸运，当我真的开始拆解时，情况并没有我想象的那么糟糕。它非常低，也没有很多会带来很多麻烦的小山丘。然而，当展会离现在不到一周，这仍然是那些会摧毁你信心的压力时刻之一。</p>
+<p>对于圣诞老人的小屋，我想用温暖的黄灯，但在乳白色蓝色窗户下它变成了绿色！所以我用了我剩下的几个冷白光……但然后窗户像手电筒一样发光！幸运的是，我有一个调光器，可以调低亮度。这就是微调的一部分，我认为这很重要，即使它有些微妙，不那么引人注目。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/0a476a90-1636-4c4e-a976-0a0649a04d61/santa-cottage-light.jpg" alt/></p>
+<p>圣诞老人小屋照明就位。</p>
+<p>照明完成并布线好，MOC重新组装，是时候焦急地看着我的BrickLink追踪号码，希望最后的零件能邮寄到达。</p>
+<hr/>
+<h2 id="brickcon的关键时刻">BrickCon的关键时刻<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#brickcon的关键时刻" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>我的第一次展会近在咫尺。当我等待那些最后的零件时，整理了一箱又一箱我从来没有机会带到展会上的MOC。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/a820a13f-cae4-4e19-b7ad-5ef5e14545d0/event-badge.jpg" alt/></p>
+<p>拼搭者的第一块brick徽章！我是Josh Parkinson，在BrickCon 2023。</p>
+<p>我考虑了供电需要。我准备了解释卡和有趣零件用法或可供寻找的动物清单，以吸引观众。我用挂绳和科技砖做好了我的brick徽章，然后加上了我从Instagram挑战和<a href="https://bricknerd.com/home/brick-nation-a-tradition-of-lego-at-emerald-city-comicon-8-30-22" class="external">翡翠城动漫展”Brick Nation”<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>展示得到的印刷/雕刻砖块。</p>
+<p>我查看了会议日程，试图弄清楚发生了什么，这些名字神秘的活动都是做什么的。周一过去，BrickCon周四就要开始了。</p>
+<p>终于……我最后的乐高订单来了！我大松一口气，接下来三天我努力赶工建造背景幕布。向上建造天空，创造越来越小的云向远处延伸，创造渐变效果，让天空向顶部逐渐变暗。北极终于完成了！</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/7149914f-7f6a-45a1-b6ff-fa7547e009e1/north-pole-finished.jpg" alt/></p>
+<p>完成的北极MOC！</p>
+<p>嗯，算是吧。打包时，我发现天空太高了，不能垂直放进箱子里。我不得不把它侧着放进箱子里。我不想再用另一个箱子，所以我必须想一个安全的方法，把景观部分堆叠在同一个箱子里。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/3e15ba8a-07ea-4c77-9890-332165d9980e/event-bins.jpg" alt/></p>
+<p>打包完成，准备出发。</p>
+<p>我决定在天空的背面建造一些脚手架，这样当它平放时，整个东西都能得到充分支撑。然后我在顶部放置垫片，确保当景观部分堆叠在上面时，云不会被重量压碎。</p>
+<p>我剪开箱子，用了一些防滑地毯布和一块板，最终所有东西都支撑得当，这样在运输过程中天空背景不会破碎或移位。至少，我希望如此！</p>
+<p>然后……就是BrickCon的前一晚。终于一切准备就绪。几乎两年的努力，这么多MOC！</p>
+<p><em>‘圣诞前一晚，作品紧紧打包，
+景观和树木，全都隐藏不见。
+我的北极MOC，一整年的创作，
+等待首次亮相，希望它能令人惊叹。</em></p>
+<p><em>精灵在明亮的天空下忙碌，
+强制透视展现出冰爽的喜悦。
+拆开包装，为即将到来的旅程做好准备，
+等待让人眼花缭乱，大日子就在眼前。</em></p>
+<hr/>
+<h2 id="圣诞老人的大日子在九月">圣诞老人的大日子……在九月<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#圣诞老人的大日子在九月" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>这是我的第一次展会。我最大的MOC。我第一次运输北极，祈祷它不会在颠簸中碎裂。我没有手推车，所以我多次往返停车场，用手搬箱子。然后我拿出每个MOC，希望运输过程中损坏最小。但总会出点问题……</p>
+<p>当我打开北极前景部分的箱子时，我的心一沉——大树从中间折断了。幸运的是，重建并不太难，断裂很干净，没有很多附带损伤。但这让我想到，将来我想做更充分的加固。</p>
+<p>在决定使用USB电源而不是电池后，我带了一些接线材料，撕开底座的一部分，将USB线从后面穿出。我推荐这种方法，不用经常更换电池。我还为我的布偶怪物混搭豪宅<a href="https://amzn.to/3O0lcVB" class="external">尝试了旋转转盘<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，因为需要从各个角度欣赏它。幸运的是，这很有效。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1ea14b29-6b09-482e-ae66-f6739cb38d20/brickcon-setup.jpg" alt/></p>
+<p>一些MOC搭建好准备展示。</p>
+<p>BrickCon非常棒。有太多很棒的作品可以看，可以交谈的人，各种各样的游戏、讲座和活动。这是一个了解事情运作方式的过程。不是每个人在公开展示期间（在这种情况下是周六和周日白天）都待在自己的MOC旁边，但我喜欢这样，即使只是静静地观察人们的反应，偶尔回答问题。（当然，我站在MOC后面的桌子中间，以适应我内向的性格。）</p>
+<p>我的意思是，这就是我们建造和分享的一部分原因——看看它对人们的影响。我尽量花时间去感受，感受所有工作的回报，这激励我继续建造，继续挑战自己。我们经常在和别人比较，感觉自己像骗子，应对抑郁，经历倦怠，还没认识到我们刚刚完成了什么就进入下一个项目。花点时间真正沉淀一下你创造了什么，以及它如何影响普通人（不仅仅是我们的同行），在展会结束后你回到日常拼搭时，会让你受益匪浅。</p>
+<hr/>
+<h2 id="关灯与开灯">关灯与开灯<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关灯与开灯" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>我听说BrickCon会有一个”关灯”晚间活动。所以我内置了灯光来利用这个机会。基本上，展会会在一个晚上关闭几个小时灯光，或者把灯光调得很低。这让MOC中的灯光能够闪耀！这是我最喜欢的事情之一，我在BrickWorld那天也看到了。</p>
+<p>我希望北极能够发光，在夜晚拥有完全不同的感觉——地平线发光，夜空温暖的灯光让精灵保持舒适，圣诞老人的小屋闪烁着温柔的光芒。为了实现这个效果，最能达到效果的是蓝色灯带。天空已经是蓝色了，但在黑暗中，蓝色的光线产生了美丽的暮光发光效果，完全改变了天空的样子。</p>
+<p>我认为夜晚可能是这个MOC我最喜欢的版本，尽管照片无法完全捕捉它。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/a8081db4-e47c-4f38-99d0-b2614910d0e7/full+build+night.jpg" alt/></p>
+<p>夜间模式！</p>
+<p>总而言之，这是一次很棒的第一次展会，我赢得了两个奖项——一个给北极，另一个给我的侏罗纪公园”<a href="https://www.instagram.com/p/CffaRdbJDl4/?img_index=3" class="external">邂逅腕龙<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>”树顶场景。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/9f3dee83-cf9a-4562-b633-c19513fcc10f/brickcon-trophy.jpg" alt/></p>
+<p>授予腕龙MOC的奖杯。</p>
+<p>我特别喜欢<a href="https://bricknerd.com/home/all-about-lego-trophies-the-award-goes-to-10-24-22" class="external">乐高制作的奖杯<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，以及其他展会参会者会放在他们最喜欢的作品旁边的小<a href="https://bricknerd.com/home/afol-tokens-of-appreciation-from-brickvention-to-brixpo-9-12-23" class="external">纪念件<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>。我期待着想出我自己的纪念创意，完善我的brick徽章，也许明年甚至可以帮忙<a href="https://bricknerd.com/home/the-lego-trophy-challenge-building-awards-for-brickcon-8-25-23" class="external">建造几个奖杯<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/c1c6e2c4-5c97-4984-9e6d-058e5d10ccb2/brickcon-tokens.jpg" alt/></p>
+<p>其他建造者的纪念件，表达他们对MOC的欣赏。</p>
+<hr/>
+<h2 id="习惯与栖息地">习惯与栖息地<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#习惯与栖息地" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>对我来说，建造是一种需要养成习惯的事情……而栖息地拼搭确实帮助我轻松进入新项目。我一整年都在起起伏伏，经历了建造饥荒和盛宴。但在年底，我过得很好。我父亲正在恢复，我建造了一个和以前任何作品都不同的东西。</p>
+<p>回首往事，我可以欣赏我完成的工作，期待未来。北极帮助我重新获得动力，我对<a href="https://www.instagram.com/brickbuiltjosh/" class="external">接下来发生的事情<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>感到兴奋。我的MOC教会了我，一切都与透视有关——生活和乐高都是如此。</p>
+<p><em>BrickNerd精品——原文发布于2024年1月12日。</em></p>
+<hr/>
+<p><em>你拼搭过人仔栖息地吗？在下方评论告诉我们。</em></p>
+<p><strong>你想帮助BrickNerd继续发布这样的文章吗？</strong> <a href="https://www.patreon.com/BrickNerdOfficial" class="external">成为顶级赞助人<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，就像Marc &amp; Liz Puleo、Paige Mueller、Rob Klingberg from Brickstuff、John &amp; Joshua Hanlon from Beyond the Brick、Megan Lum、Andy Price、Lukas Kurth from StoneWars、Wayne Tyler、LeAnna Taylor、Monica Innis、Dan Church、Roxanne Baxter，和Steven Laughlin，来展示你的支持，获得早期访问、独家礼品等等。**</p>
+<hr/>
+<h2 id="相关实体">相关实体<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关实体" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/乐高场景透视技术" class="internal alias" data-slug="entities/乐高场景透视技术">乐高场景透视技术</a> — 场景透视与深度表现</li>
+<li><a href="../entities/乐高场景光影研究" class="internal alias" data-slug="entities/乐高场景光影研究">乐高场景光影研究</a> — 光影氛围与光影效果</li>
+</ul>
+<h2 id="相关主题">相关主题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关主题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../乐高艺术创作" class="internal alias" data-slug="乐高艺术创作">乐高艺术创作</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-572" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#透视与光影研究--北极场景的深度解析" data-for="透视与光影研究--北极场景的深度解析">透视与光影研究 — 北极场景的深度解析</a></li><li class="depth-1"><a href="#完整内容" data-for="完整内容">完整内容</a></li><li class="depth-1"><a href="#生活停摆的那段时间" data-for="生活停摆的那段时间">生活停摆的那段时间</a></li><li class="depth-1"><a href="#第五阶段升起背景幕布打开灯光开始展示" data-for="第五阶段升起背景幕布打开灯光开始展示">第五阶段：升起背景幕布，打开灯光，开始展示</a></li><li class="depth-1"><a href="#brickcon的关键时刻" data-for="brickcon的关键时刻">BrickCon的关键时刻</a></li><li class="depth-1"><a href="#圣诞老人的大日子在九月" data-for="圣诞老人的大日子在九月">圣诞老人的大日子……在九月</a></li><li class="depth-1"><a href="#关灯与开灯" data-for="关灯与开灯">关灯与开灯</a></li><li class="depth-1"><a href="#习惯与栖息地" data-for="习惯与栖息地">习惯与栖息地</a></li><li class="depth-1"><a href="#相关实体" data-for="相关实体">相关实体</a></li><li class="depth-1"><a href="#相关主题" data-for="相关主题">相关主题</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-2" class="overflow"><li><a href="../entities/乐高场景光影研究" class="internal">乐高场景光影氛围与灯光技术</a></li><li><a href="../entities/乐高场景透视技术" class="internal">乐高场景透视与深度表现技术</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

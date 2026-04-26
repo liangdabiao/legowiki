@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>乐高零件分类系统</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="乐高搭建合集 Wiki"/><meta property="og:title" content="乐高零件分类系统"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="乐高零件分类系统"/><meta name="twitter:description" content="乐高零件分类系统 Tom Alphin 设计的专业乐高零件分类标签系统（版本 39.2，2023年1月9日发布）是乐高玩家社区中公认最完善的零件分类方案。该系统基于零件的形状和功能特征进行分类，提供了清晰的视觉识别和系统化的收纳方法。 系统概览 这套标签系统将乐高零件划分为 12 个主要类别，每个大类下又细分为若干子类别。标签上印有零件的实物图片和编号，方便快速识别和归位。对于拥有大量零件的搭建者来说，这套系统是整理收纳的黄金标准。 完整分类目录 1."/><meta property="og:description" content="乐高零件分类系统 Tom Alphin 设计的专业乐高零件分类标签系统（版本 39.2，2023年1月9日发布）是乐高玩家社区中公认最完善的零件分类方案。该系统基于零件的形状和功能特征进行分类，提供了清晰的视觉识别和系统化的收纳方法。 系统概览 这套标签系统将乐高零件划分为 12 个主要类别，每个大类下又细分为若干子类别。标签上印有零件的实物图片和编号，方便快速识别和归位。对于拥有大量零件的搭建者来说，这套系统是整理收纳的黄金标准。 完整分类目录 1."/><meta property="og:image:alt" content="乐高零件分类系统 Tom Alphin 设计的专业乐高零件分类标签系统（版本 39.2，2023年1月9日发布）是乐高玩家社区中公认最完善的零件分类方案。该系统基于零件的形状和功能特征进行分类，提供了清晰的视觉识别和系统化的收纳方法。 系统概览 这套标签系统将乐高零件划分为 12 个主要类别，每个大类下又细分为若干子类别。标签上印有零件的实物图片和编号，方便快速识别和归位。对于拥有大量零件的搭建者来说，这套系统是整理收纳的黄金标准。 完整分类目录 1."/><meta property="og:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://lego-wiki.pages.dev"/><meta property="og:url" content="https://https//lego-wiki.pages.dev/entities/乐高零件分类系统"/><meta property="twitter:url" content="https://https//lego-wiki.pages.dev/entities/乐高零件分类系统"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="乐高零件分类系统 Tom Alphin 设计的专业乐高零件分类标签系统（版本 39.2，2023年1月9日发布）是乐高玩家社区中公认最完善的零件分类方案。该系统基于零件的形状和功能特征进行分类，提供了清晰的视觉识别和系统化的收纳方法。 系统概览 这套标签系统将乐高零件划分为 12 个主要类别，每个大类下又细分为若干子类别。标签上印有零件的实物图片和编号，方便快速识别和归位。对于拥有大量零件的搭建者来说，这套系统是整理收纳的黄金标准。 完整分类目录 1."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXGxlZ28tbGxtLXdpa2lcXHF1YXJ0elxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://https://lego-wiki.pages.dev/index.xml"/></head><body data-slug="entities/乐高零件分类系统"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">乐高搭建合集 Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-711"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-711" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../entities/">entities</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>乐高零件分类系统</a></div></nav><h1 class="article-title">乐高零件分类系统</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-24T16:00:00.000Z">2026年4月25日</time><span>5分钟阅读</span></p><ul class="tags"><li><a href="../tags/乐高零件" class="internal tag-link">乐高零件</a></li><li><a href="../tags/分类系统" class="internal tag-link">分类系统</a></li><li><a href="../tags/零件整理" class="internal tag-link">零件整理</a></li><li><a href="../tags/收纳管理" class="internal tag-link">收纳管理</a></li><li><a href="../tags/Tom-Alphin" class="internal tag-link">Tom-Alphin</a></li></ul></div></div><article class="popover-hint"><h1 id="乐高零件分类系统">乐高零件分类系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#乐高零件分类系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Tom Alphin 设计的专业乐高零件分类标签系统（版本 39.2，2023年1月9日发布）是乐高玩家社区中公认最完善的零件分类方案。该系统基于零件的形状和功能特征进行分类，提供了清晰的视觉识别和系统化的收纳方法。</p>
+<h2 id="系统概览">系统概览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#系统概览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>这套标签系统将乐高零件划分为 12 个主要类别，每个大类下又细分为若干子类别。标签上印有零件的实物图片和编号，方便快速识别和归位。对于拥有大量零件的搭建者来说，这套系统是整理收纳的黄金标准。</p>
+<h2 id="完整分类目录">完整分类目录<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#完整分类目录" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-基础零件basic">1. 基础零件（BASIC）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-基础零件basic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>基础砖块、平板、特殊形状等核心零件，是所有搭建项目的基础。</p>
+<h3 id="2-墙面零件wall">2. 墙面零件（WALL）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-墙面零件wall" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>标准墙面零件（包括各种尺寸的砖块和面板）</li>
+<li>带窗户和门的墙面零件（WALL-window_door）</li>
+</ul>
+<h3 id="3-侧向搭建零件snot">3. 侧向搭建零件（SNOT）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-侧向搭建零件snot" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Studs Not On Top 技术的核心零件，包括各种转向板、侧向砖和夹子砖，实现多方向搭建。</p>
+<h3 id="4-夹子零件clip">4. 夹子零件（CLIP）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-夹子零件clip" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>标准夹子（CLIP-clip）：用于连接砖块和面板</li>
+<li>旗帜夹子（CLIP-flag）：用于安装旗帜和标识牌</li>
+</ul>
+<h3 id="5-铰链零件hinge">5. 铰链零件（HINGE）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-铰链零件hinge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>实现可动连接和角度调整的关键零件，包括卡片式铰链和砖式铰链两种类型。</p>
+<h3 id="6-插座零件socket">6. 插座零件（SOCKET）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-插座零件socket" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>球关节和插座类连接件，常用于关节活动和人仔配件。</p>
+<h3 id="7-斜坡零件angle">7. 斜坡零件（ANGLE）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-斜坡零件angle" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>按角度细分为多个子类别：</p>
+<ul>
+<li>10 度、18 度、30 度缓坡</li>
+<li>33 度标准斜坡砖</li>
+<li>55 度、65 度、75 度陡坡</li>
+<li>倒置斜坡</li>
+<li>挡风玻璃/曲面斜坡</li>
+</ul>
+<h3 id="8-曲面零件curved">8. 曲面零件（CURVED）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-曲面零件curved" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>标准曲面砖（CURVED-curved）</li>
+<li>楔形曲面（CURVED-wedge）</li>
+<li>球形曲面（CURVED-ball）</li>
+<li>心形、星形等特殊曲面（CURVED-heart_star）</li>
+</ul>
+<h3 id="9-车辆零件vehicle">9. 车辆零件（VEHICLE）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-车辆零件vehicle" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>包含完整的车轮系列（从 8mm 小轮到 56mm 超大轮）以及科技销、车辆支架等连接件。</p>
+<h3 id="10-人仔零件minifig">10. 人仔零件（MINIFIG）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-人仔零件minifig" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>包括标准人仔和迷你娃娃（好朋友系列）的服装、发型、躯干和腿部零件。</p>
+<h3 id="11-自然元素nature">11. 自然元素（NATURE）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-自然元素nature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>花朵、植物、农产品、动物特征（角、尾巴、牙齿等）零件。</p>
+<h3 id="12-科技零件technic">12. 科技零件（TECHNIC）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-科技零件technic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>科技系列专用零件，包括梁、销、连接器、轴套等。</p>
+<h2 id="实际收纳建议">实际收纳建议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#实际收纳建议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>按分类建立收纳盒</strong>：每个大类使用独立的收纳盒或抽屉，子类别可用分隔板进一步细分</li>
+<li><strong>标签粘贴规范</strong>：将标签贴在收纳盒正面，确保在正常角度下可以清晰阅读</li>
+<li><strong>渐进式整理</strong>：建议从 BASIC 和 WALL 开始整理，这两个类别占据了零件总量的绝大部分</li>
+<li><strong>定期维护</strong>：随着新零件的购入，及时更新分类和标签，保持系统的完整性</li>
+</ol>
+<h2 id="零件编号查询">零件编号查询<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#零件编号查询" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>每个乐高零件都有唯一的零件编号，可以在 BrickLink、Rebrickable 等平台上查询零件的详细信息和购买渠道。掌握零件编号是高效管理零件库的关键技能——当你需要某个特定零件时，直接通过编号搜索比通过形状描述查找要高效得多。</p>
+<h2 id="相关页面">相关页面<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关页面" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/侧向搭建技术" class="internal alias" data-slug="entities/侧向搭建技术">侧向搭建技术</a></li>
+<li><a href="../entities/乐高零件创意" class="internal alias" data-slug="entities/乐高零件创意">乐高零件创意</a></li>
+<li><a href="../entities/SNOT技巧" class="internal alias" data-slug="entities/SNOT技巧">SNOT技巧</a></li>
+</ul>
+<h2 id="相关图片">相关图片<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关图片" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="https://liangdabiao.com/lego/images/0fd523a237a5a61b3435197fb431600b3ecbdf3214341008063bf17a0c695167.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/574661d74419f5664b6fa519ffeb8871b68baabacae97096044bab6319c3a112.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/795aa37dd4adf7693f5f3551e20aa5e0212b4597c840a73bd43e7e2e07d9acdb.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/fae4790e77ba0c40cfbd1e22bd30d801cd14f4c3c71af9946bff543a6d306e51.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/33dc32268c96144f64513476929141972ea532852028c07972d892d4ea71a780.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/193d8f7f11736134ab4b2a11597a871ab2f14217e9f3ef75f6449e397881460.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/38153bae7eb487bebfc4fc99684461cc55c61a0ea6cc45e76245b2cb12df9696.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/87cdaf3ae42b64b80481a924f1607b25af9cb90a3d31ac26bc075fb403ad6055.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/11f0a298c51c196dfd2bc998ae43b4edbd0f010072c7e46ea817b2e55a42f792.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/b169f5e6164f7146982828bcd00467c3a21546692237133765bc7c63a6b39e18.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/33da6a69e11dcba182350f8cfaa0a21e23b01cd4621924655178789f75e0702c.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/0b8e95bfc6aa6af050da8b73082ce6823ba4f1360ed9906bd65d86af351b450b.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/8e9519ca05ad0897692f596e6d0d91591d7e08ad4832d33a1ffe897f857eab64.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/bf77c6bb27f4f1e5387056fe1932a4ee40d4c2baf086fe2dcfd142071f8b237e.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/47075a32da3c1f01b5841821b25eb79ddf77bc9253c999de6412778fd04702c4.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/2e057111069d2527cc0e045d985652adf56e968ea99e22cbfea5801a818a7595.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/6c055c53b0ded0bcbcb840f2fb7f8b9f8c690ea1ac3c4f501b9486a7e28d20a3.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/66e65691109d8d2d27e2831115206040bc5720be787b4e480f6aac46a382b8d2.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/3bfb14d087251afd29774af63e21a9e8a8a0d6aaac932bf2aa789ad27d9ee9f2.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/e12c6ff37dfd47f2ce1926fe1d146c06e6c1b08748880b3615d69a7007786122.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/4cbfa27952b53b9d596cae94164d07491deeef7747848143016872a2e1187c30.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/94933a26806374f3d2d262cc7e7ebbe3f113aec3b3ced508f1e416d7d9ec3c01.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/49d9a7b13e288c335c799715dbccc1a21e5b8a562f36a5d95d7431c046a99c3d.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/23437b7df7597e1bbec2925f67d2acd275cf7c25b8e4f2eefc7dd956aacbd031.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/6221d1a83287bc30b5a9169c50196c44fc1fda9f8777494a7f6d1a7bda851f8c.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/73bdd921f31367f14e75169daefc6f126dfd5dae5610340540eddcfe3ffd544f.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/4bbd3047a14912ca36d20e98b2523efc553ce291cffee5b79dfab67f45c622c4.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/3d5f959dc3af77b018aec60edf7bc898db6f9a45071ef53c4beac68518dd15c7.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/d6f5daa3a95fb013a2e3c9d416d20747c1d45e18a0c82d6c5472879841ef79d9.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/ff192039774ba4acbafbbd661ba505d4963e8897fefebb42084666d71e32f7a0.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/00af8b85967b72f5ed3422c543f9c89fb505a4e87276b5acab74050362d4930d.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/e401a76a22fa1b28565fa2b6bca78a41d83bf5777a58d95cb531a1af6c45ff17.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/8b4e70159dd32a68a17c4f9054b9a552835595767afba82e1bc68dd5bb9da7e5.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/41c91eb2cc883845e57b70c9ca0a75aaf097d1f55fee1e64dc755b209594bd7d.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/062e74e3910869b7d55b71338947e6b3f906f07089783e268444657698abd37c.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/067d598a15455d2c21e98faf7c4586fcd24e8932c05c9eb9fe5aba630fb201a1.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/7e83127fe5e45430183a464f554716f517a6b0c575518cddad52c1fc2d006dc7.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/795bb93bc8353a84ec6e7d58591fd75cc8f87085f64dc722434972d3478938e0.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/3e46a823441fb1d493ca7a30bc445defebafd3d207c401f011b7296b7c3770b1.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/fc9420cb43dcfd4d04176045729494d2dd2eb79337da398e5b6957ff656dec66.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/c50257c8e26d2cdb2b7bbfe1e43a24eba28b0d3b7cff026ab493b948d797ef73.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/588808b1bd7cf3c9dbce061652da78dfedba0a30884574899fc3edbad6478cd7.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/06f422206574c870745251763218e493ee9167d36dc4a7cfab6f4dedd0fe1fb2.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/9465da225bb59a28af06993fdf86c633d4a5a87066ffa268abcc0896f216b2b3.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/d4e8bc1420e6b05d1660d7daf88074d9d9dbbe14516fc0195a9021abc5fe3e15.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/891d131367cd9ff6e64128662455bdb8913bba05bf539b569d8ed3a412b5ea76.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/36ee622e364b878175768bd9cbe82f4396cd5ce85f7c1323a37fc126d681ad4e.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/ec78dbf69194e66b8fade7fd84b3a1454b37dbf4e8410e1f44dd865a0c6c0153.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/de7bb136e2a5c980da7e015775ac4915ae4565120fcca98a225b3e1ec99b1a46.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/eac3bdd635c6aa8daac4c7c4d15c6bf495932d227bc6c9dc056a8033a77a9f80.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/67aac8752a7bb4aa57a83a348e05579af87ff604125470a05bb4a57a0f4f43a2.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/429c51e1ac1d43eace74bc893ed41ed1d60c789bee074580767c9d3ec7e1d67c.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/6f6e448c818ff7f566901244b6067b56705bb05545dcef286113dda9a5eb3913.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/59b2d7039995d43a50c04113fe5b3431f8f3b0b865a8163c5472af6c7be41916.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/19a6f62d78cff2959fc42a2110023cde0e62e1e34e2cba21165decc2b8cb3839.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/33b35598cb70f1b54ec019fa9b01fc998eeda6f017232f3b7699853b558a65f3.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/5d6463a6af2ee88341f89d37c7b70504d3276bce84fa4b64f37e9fee9b193d26.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/33a9ecb044615a5e364ed7c085a5582247c5a5f9134bd24ac8be4c4d7421d89d.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/b35521a3e25c53250cbbda5516fe50c237bf8d06129b728a7f60ef00423a8906.jpg" alt="image"/>
+<img src="https://liangdabiao.com/lego/images/390d55268ba0c60a14fd46b05fda7619a721d98e44400bff19b7be14f3032819.jpg" alt="image"/></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-354" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#乐高零件分类系统" data-for="乐高零件分类系统">乐高零件分类系统</a></li><li class="depth-1"><a href="#系统概览" data-for="系统概览">系统概览</a></li><li class="depth-1"><a href="#完整分类目录" data-for="完整分类目录">完整分类目录</a></li><li class="depth-2"><a href="#1-基础零件basic" data-for="1-基础零件basic">1. 基础零件（BASIC）</a></li><li class="depth-2"><a href="#2-墙面零件wall" data-for="2-墙面零件wall">2. 墙面零件（WALL）</a></li><li class="depth-2"><a href="#3-侧向搭建零件snot" data-for="3-侧向搭建零件snot">3. 侧向搭建零件（SNOT）</a></li><li class="depth-2"><a href="#4-夹子零件clip" data-for="4-夹子零件clip">4. 夹子零件（CLIP）</a></li><li class="depth-2"><a href="#5-铰链零件hinge" data-for="5-铰链零件hinge">5. 铰链零件（HINGE）</a></li><li class="depth-2"><a href="#6-插座零件socket" data-for="6-插座零件socket">6. 插座零件（SOCKET）</a></li><li class="depth-2"><a href="#7-斜坡零件angle" data-for="7-斜坡零件angle">7. 斜坡零件（ANGLE）</a></li><li class="depth-2"><a href="#8-曲面零件curved" data-for="8-曲面零件curved">8. 曲面零件（CURVED）</a></li><li class="depth-2"><a href="#9-车辆零件vehicle" data-for="9-车辆零件vehicle">9. 车辆零件（VEHICLE）</a></li><li class="depth-2"><a href="#10-人仔零件minifig" data-for="10-人仔零件minifig">10. 人仔零件（MINIFIG）</a></li><li class="depth-2"><a href="#11-自然元素nature" data-for="11-自然元素nature">11. 自然元素（NATURE）</a></li><li class="depth-2"><a href="#12-科技零件technic" data-for="12-科技零件technic">12. 科技零件（TECHNIC）</a></li><li class="depth-1"><a href="#实际收纳建议" data-for="实际收纳建议">实际收纳建议</a></li><li class="depth-1"><a href="#零件编号查询" data-for="零件编号查询">零件编号查询</a></li><li class="depth-1"><a href="#相关页面" data-for="相关页面">相关页面</a></li><li class="depth-1"><a href="#相关图片" data-for="相关图片">相关图片</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-2" class="overflow"><li><a href="../entities/Emilio-Mazur" class="internal">Emilio Mazur（Kotzbricks）</a></li><li><a href="../entities/Eva-Svartkrut" class="internal">伊娃·斯瓦特克鲁特（Eva Svartkrut）</a></li><li><a href="../entities/SNOT技巧" class="internal">SNOT技巧</a></li><li><a href="../entities/乐高大师-电视节目" class="internal">《乐高大师》电视节目（LEGO Masters）</a></li><li><a href="../entities/乐高新零件开发策略" class="internal">乐高新零件开发策略</a></li><li><a href="../entities/乐高精灵宝可梦MOC" class="internal">乐高精灵宝可梦MOC</a></li><li><a href="../entities/乐高零件创意" class="internal">乐高零件创意</a></li><li><a href="../entities/侧向搭建技术" class="internal">侧向搭建技术</a></li><li><a href="../" class="internal">index</a></li><li><a href="../sources/2021-11-16-lego-masters-behind-scenes" class="internal">2021-11-16-lego-masters-behind-scenes</a></li><li><a href="../sources/2026-01-09-why-lego-keeps-making-new-parts" class="internal">为什么乐高不断推出新零件</a></li><li><a href="../topics/乐高零件管理" class="internal">乐高零件管理</a></li><li><a href="../topics/零件系统与测量" class="internal">零件系统与测量</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

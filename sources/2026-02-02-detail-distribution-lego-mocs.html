@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>从噪音到叙事：乐高MOC中的细节分布</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="乐高搭建合集 Wiki"/><meta property="og:title" content="从噪音到叙事：乐高MOC中的细节分布"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="从噪音到叙事：乐高MOC中的细节分布"/><meta name="twitter:description" content="从噪音到叙事：乐高MOC中的细节分布 BrickNerd 深度设计理论文章，探讨如何在乐高 MOC 中通过细节分布引导观者视线、讲述故事并激发情感。 概述 本文最初发表于 BrickNerd Deep Dive 系列（2026年2月2日），由 Oscar Cederwall 撰写。文章系统性地探讨了乐高 MOC 中的细节分布理论，从视觉层级、焦点、对称与平衡、负空间等设计理论基础出发，结合大量实例讲解分层、色块划分、纹理变化、重复等具体技巧，并列举了过度细节化等常见陷阱。这是 Oscar Cederwall 乐高设计理论系列的延续，此前已发表过”乐高与创造力”和”色彩理论与构图”等相关文章。 ..."/><meta property="og:description" content="从噪音到叙事：乐高MOC中的细节分布 BrickNerd 深度设计理论文章，探讨如何在乐高 MOC 中通过细节分布引导观者视线、讲述故事并激发情感。 概述 本文最初发表于 BrickNerd Deep Dive 系列（2026年2月2日），由 Oscar Cederwall 撰写。文章系统性地探讨了乐高 MOC 中的细节分布理论，从视觉层级、焦点、对称与平衡、负空间等设计理论基础出发，结合大量实例讲解分层、色块划分、纹理变化、重复等具体技巧，并列举了过度细节化等常见陷阱。这是 Oscar Cederwall 乐高设计理论系列的延续，此前已发表过”乐高与创造力”和”色彩理论与构图”等相关文章。 ..."/><meta property="og:image:alt" content="从噪音到叙事：乐高MOC中的细节分布 BrickNerd 深度设计理论文章，探讨如何在乐高 MOC 中通过细节分布引导观者视线、讲述故事并激发情感。 概述 本文最初发表于 BrickNerd Deep Dive 系列（2026年2月2日），由 Oscar Cederwall 撰写。文章系统性地探讨了乐高 MOC 中的细节分布理论，从视觉层级、焦点、对称与平衡、负空间等设计理论基础出发，结合大量实例讲解分层、色块划分、纹理变化、重复等具体技巧，并列举了过度细节化等常见陷阱。这是 Oscar Cederwall 乐高设计理论系列的延续，此前已发表过”乐高与创造力”和”色彩理论与构图”等相关文章。 ..."/><meta property="og:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://lego-wiki.pages.dev"/><meta property="og:url" content="https://https//lego-wiki.pages.dev/sources/2026-02-02-detail-distribution-lego-mocs"/><meta property="twitter:url" content="https://https//lego-wiki.pages.dev/sources/2026-02-02-detail-distribution-lego-mocs"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="从噪音到叙事：乐高MOC中的细节分布 BrickNerd 深度设计理论文章，探讨如何在乐高 MOC 中通过细节分布引导观者视线、讲述故事并激发情感。 概述 本文最初发表于 BrickNerd Deep Dive 系列（2026年2月2日），由 Oscar Cederwall 撰写。文章系统性地探讨了乐高 MOC 中的细节分布理论，从视觉层级、焦点、对称与平衡、负空间等设计理论基础出发，结合大量实例讲解分层、色块划分、纹理变化、重复等具体技巧，并列举了过度细节化等常见陷阱。这是 Oscar Cederwall 乐高设计理论系列的延续，此前已发表过”乐高与创造力”和”色彩理论与构图”等相关文章。 ..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXGxlZ28tbGxtLXdpa2lcXHF1YXJ0elxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://https://lego-wiki.pages.dev/index.xml"/></head><body data-slug="sources/2026-02-02-detail-distribution-lego-mocs"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">乐高搭建合集 Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1348"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1348" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>从噪音到叙事：乐高MOC中的细节分布</a></div></nav><h1 class="article-title">从噪音到叙事：乐高MOC中的细节分布</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-26T16:00:00.000Z">2026年4月27日</time><span>19分钟阅读</span></p><ul class="tags"><li><a href="../tags/设计理论" class="internal tag-link">设计理论</a></li><li><a href="../tags/细节分布" class="internal tag-link">细节分布</a></li><li><a href="../tags/视觉层级" class="internal tag-link">视觉层级</a></li><li><a href="../tags/焦点" class="internal tag-link">焦点</a></li><li><a href="../tags/负空间" class="internal tag-link">负空间</a></li><li><a href="../tags/MOC设计" class="internal tag-link">MOC设计</a></li><li><a href="../tags/搭建技巧" class="internal tag-link">搭建技巧</a></li><li><a href="../tags/BrickNerd" class="internal tag-link">BrickNerd</a></li><li><a href="../tags/Oscar-Cederwall" class="internal tag-link">Oscar-Cederwall</a></li></ul></div></div><article class="popover-hint"><h1 id="从噪音到叙事乐高moc中的细节分布">从噪音到叙事：乐高MOC中的细节分布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#从噪音到叙事乐高moc中的细节分布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>BrickNerd 深度设计理论文章，探讨如何在乐高 MOC 中通过细节分布引导观者视线、讲述故事并激发情感。</p>
+</blockquote>
+<h2 id="概述">概述<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#概述" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本文最初发表于 BrickNerd Deep Dive 系列（2026年2月2日），由 <strong>Oscar Cederwall</strong> 撰写。文章系统性地探讨了乐高 MOC 中的细节分布理论，从视觉层级、焦点、对称与平衡、负空间等设计理论基础出发，结合大量实例讲解分层、色块划分、纹理变化、重复等具体技巧，并列举了过度细节化等常见陷阱。这是 Oscar Cederwall 乐高设计理论系列的延续，此前已发表过”乐高与创造力”和”色彩理论与构图”等相关文章。</p>
+<h2 id="完整内容">完整内容<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#完整内容" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>MOC 往往不仅是好玩的搭建物。它们是用于讲故事、工程表达和艺术创作的微型画布。无论你是在制作中世纪城堡、机甲还是繁华的城市景观，有一个原则可能是区分好作品与伟大作品的关键：<strong>用心的细节分布</strong>。</p>
+<p>在今天的文章中，我将延续对设计理论的探索，以及如何将它们应用到我们的爱好中。以下是本系列其他文章的链接：</p>
+<ul>
+<li><a href="https://bricknerd.com/home/lego-and-creativity-unleashing-the-master-builder-within-2-2-23" class="external">乐高与创造力<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://bricknerd.com/home/using-color-theory-and-composition-in-lego-mocs-3-25-24" class="external">色彩理论与构图<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<hr/>
+<h2 id="什么是细节分布">什么是”细节分布”？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#什么是细节分布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>细节分布指的是视觉复杂性如何在整个作品中分布。这不仅仅是关于你使用了多少元素，而是关于你在<strong>哪里</strong>以及<strong>为什么</strong>使用它们。一个细节均匀分布的作品可能感觉平淡或令人窒息，而一个具有策略性变化的作品可以引导观者的视线、讲述故事并激发情感。</p>
+<p>要更好地理解这一点，需要区分<strong>细节</strong>和<strong>信息</strong>：</p>
+<ul>
+<li><strong>细节</strong>是视觉复杂性——纹理、形状、greebles（细节贴片）、色彩点缀。</li>
+<li><strong>信息</strong>是细节所<strong>传达的</strong>内容——功能、故事、结构、用途。</li>
+</ul>
+<p>两件作品可以有相同数量的细节，但传达更多信息的那件作品总是会感觉更清晰、更有意图。好的细节分布归根结底是放置<strong>意义</strong>，而不仅仅是装饰。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/5687b282-7f91-45e4-841e-622f5bc04977/Graves.png" alt/>
+<em>上面两幅图中的 MOC 完全相同，除了花朵的分布方式。左图中花朵均匀分布在底板上，右图中花朵聚集成簇，最大的一簇围绕金色铭牌的墓碑。哪一幅看起来更有趣？</em></p>
+<hr/>
+<h2 id="设计理论基础">设计理论基础<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#设计理论基础" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="视觉层级">视觉层级<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#视觉层级" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>视觉层级的目的是帮助观者知道该先看哪里。设计师使用对比、比例和位置来创建这种层级。</p>
+<p>在乐高中，这可能意味着在塔楼上使用华丽的细节，同时保持周围墙壁简洁。视线被吸引向上方，故事在那里展开。视觉层级的技巧在于首先吸引观者注意到你的 MOC——一旦他们这样做了，应该有一个叙事供他们的视线跟随。</p>
+<h3 id="焦点">焦点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#焦点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>每个作品都受益于一个或多个焦点：集中信息的区域，锚定观者的注意力。这些可以是叙事性的（一个角色）、建筑性的（一个独特的结构）或机械性的（一个可动部件）。</p>
+<p>当焦点包含最高浓度的<strong>信息</strong>而不仅仅是最多细节时，效果最好。一块明亮的瓷砖或一簇 greebles 只有在告诉观者重要信息时才能成为有效的焦点。</p>
+<p><a href="https://flic.kr/p/2oqnwvF" class="external"><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/d4bf56c7-1ec6-4ab2-b9f2-3564f1b05213/52784337337_b009036c34_b.jpg" alt="Ralf Langer 场景"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<em>上面的场景（Ralf Langer 作品）包含许多细节，但中间有一个拿着紫色花的角色，你可能立刻就注意到了。紫色是高对比度的焦点，立即将注意力吸引到中心。从那里开始，你开始注意到其他细节。</em></p>
+<h3 id="平衡与对称">平衡与对称<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#平衡与对称" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>对称创造和谐；不对称创造张力。两者都很有用，取决于你的目标。细节分布在维持平衡方面起着关键作用——无论是通过镜像装饰还是偏移的细节簇。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/2bfa7ad4-469c-40c3-b2cd-a902e9fcdce3/44234076185_c63b7978d7_k.jpg" alt/>
+<em>Jonas Wide 作品 — 对称的寺庙感觉庄严而神圣</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/db8e9453-64ab-4060-b3f3-dc584fb880ab/53840083932_5b99056350_b+%281%29.jpg" alt/>
+<em>Stefan Formentano 作品 — 不对称的赛博朋克建筑感觉混乱而充满活力</em></p>
+<h3 id="接近性">接近性<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#接近性" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将相似的细节聚簇可以使它们更易读、更自然。如文章第一张图所示，均匀间隔的花朵田看起来像噪音，但一组花朵看起来是有意图的、有机的。接近性也可以用来将注意力引向焦点。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1769009740194-2QNUBI6ZQ3DVOA0CVBVG/Proximity1.jpg" alt="容器细节簇聚"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1769009740162-DN6ZR53BVF3C6D8TPAEA/Proximity2.jpg" alt="容器细节标注"/>
+<em>这些图片展示了 Oscar Cederwall 的一个 MOC 中的容器细节。他将容器聚簇成组（右图高亮显示）。如果将它们均匀分布在飞船上，这些细节不会有如此好的效果。</em></p>
+<h3 id="负空间">负空间<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#负空间" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>负空间（有意使用空白或整洁的区域）对于赋予乐高模型清晰度和冲击力至关重要。平滑表面和安静区域创造出对比，使附近的细节感觉更锐利、更有意图。没有这些安静区域，即使精心制作的 greebling 也可能崩塌为视觉噪音。</p>
+<p>这种空白给眼睛休息的空间，防止观者感到压迫。它还增强了对比，使复杂的部分在简单的框架下显得更丰富。大型未中断的表面甚至可以暗示规模，唤起星际驱逐舰的巨大船体或科幻机库的宏伟墙壁。最重要的是，负空间强化了焦点：通过减少关键细节周围的竞争，它自然地将注意力引导到重要区域。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1769009975994-9CYNHW1XX36ABDH0B8FJ/Negative1.jpg" alt/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1769009975993-I63CK1TQ96P1USXU8JMW/Negative2.jpg" alt/>
+<em>空白区域（右图高亮显示）使这个太空飞船设计中的细节更加突出</em></p>
+<p>负空间也可以通过在搭建中留空来实现，比如一个洞。如 Bart de Dobbelaer 的 MOC 所示，空洞成为焦点，将视线引向结构。</p>
+<p><a href="https://flic.kr/p/2o8Pt71" class="external"><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/998db3d3-9263-402c-a970-3ce6388fbb56/52597018352_1968fc1d09_4k.jpg" alt="Bart de Dobbelaer 作品"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<hr/>
+<h2 id="细节分布技巧">细节分布技巧<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#细节分布技巧" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="分层">分层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>在设计太空船时，增加视觉趣味的一种方法是将细节放在不同的层次中。我的一个常用想法是让光滑的装甲板作为外层，底下是更详细的工业部件。最内层可以是超级结构。让飞船的某些部分不被板覆盖，使其他层的部分透出来。</p>
+<p><a href="https://flic.kr/p/2eyzRgR" class="external"><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/264307bd-16da-4e45-8a56-b246dde0fe61/46970062851_ce2dcc8ef9_k.jpg" alt="Blake Foster 飞船"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<em>在上面的作品中（Blake Foster），你可以看到分层的示例。白色最外层定义了飞船的形状，相对光滑，缺乏太多细节。浅灰色层从白色层下方探出，包含更多结构和图案。最内层是深灰色层，也包含最高水平的细节。</em></p>
+<h3 id="色块划分">色块划分<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#色块划分" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>色块划分是一种使用颜色来创建有趣设计的方法。通过使用互补和/或对比色，你可以突出设计的部分。</p>
+<p>在太空船设计中，与分层一样，我经常使用颜色来代表各种功能。比如用一种颜色表示武器系统，用另一种颜色表示紧急舱口等。在面板上零星添加色彩点缀也很有效，使作品看起来更令人兴奋。</p>
+<p><a href="https://flic.kr/p/2pxv4Su" class="external"><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/86050ce2-759c-45a0-80f1-1d01842157a6/53521380852_1dac97cb1d_b+%281%29.jpg" alt="Inthert 飞船"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<em>上面是色块划分的一个很好示例（Inthert 作品）。白色是飞船的底色。有一些青色高光可能是表示呼号或中队的标记。灰色区域展示了机械部件，如武器、传感器、舱口等。还有一些略微”变色”的高光，暗示了磨损。</em></p>
+<h3 id="纹理变化">纹理变化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#纹理变化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>混合光滑和有凸粒的表面以创造节奏。纹理可以暗示材料、年龄或功能。乐高世界中经典的例子是 greebling——看似随机地添加暗示功能性细节以打破单调平坦表面的方法。然而，如果均匀分布 greebling，可能达不到你想要的效果。尝试节制使用 greebling，让眼睛在 patches 之间休息。同时让 greebling 之间的距离有所变化，否则大脑可能只会将你的细节记录为噪音。</p>
+<p>这里<em>细节</em>和<em>信息</em>的区别变得至关重要。为了 greebling 本身而添加细节，但未必添加信息。一个随机的管道或格栅可能看起来有趣，但除非它暗示了功能（如通风、电力传输、结构加固），否则它有变成噪音的风险。有目的的 greebling 则向观者传达了飞船或结构的工作方式的信息。当纹理变化支持隐含功能时，细节就转化为信息。</p>
+<p>为了举例说明好的与坏的纹理之间的区别，以下是 70 年代为科幻电影制作的模型。第一个例子是为《星球大战第四集：新希望》建造的千年隼原版模型。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/7e34b97c-fead-4529-8f82-9a22bef5840b/unnamed.png" alt/>
+<em>来自 GQ Magazine。千年隼的 greebling 被应用在不同层次：在飞船表面使用小管道和螺栓。但在后部，greebling 更重，暗示了那里有更多的改装。还有一些重细节的飞溅式应用，大多对称布置以创造功能或设计感。</em></p>
+<p>另一个例子是 1978 年电影《星际大碰撞》（Star Crash）中的模型。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/b6343682-e160-4c70-821c-2a71020043ce/StarlogStarcrashModel.jpg" alt/>
+<em>来自 ken-mcconnell.com。greebling 使用了相同的模型拼凑方法。然而，完全没有目的感或流动感。随机碎片只是杂乱地粘在飞船上。完成后整个飞船被喷成统一的灰色。虽然这个模型不是电影中的主飞船也不完整，但它很好地说明了无意义的 greebling 如何完全毁掉一个设计。</em></p>
+<h3 id="重复">重复<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#重复" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>重复是建立清晰设计语言的核心技巧。当形状、颜色或结构主题多次出现时，观者直觉地将它们读作有意图的选择而非装饰。这创造了统一性，减少了视觉噪音，并帮助模型感觉属于一个连贯的世界、阵营或制造商。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1769066678095-2NG6UFGTAZRZD1DBCSEJ/Repetition1.jpg" alt="重复图案"/></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1769066678093-1XQWBSEWO4DMRKYEDMC8/Repetition2.jpg" alt="重复标注"/>
+<em>Oscar Cederwall 的 MOC 中的重复图案。一些斜坡更长（右图高亮），使它们看起来像支撑角撑板。这个图案在整个飞船长度上重复，赋予细节以目的感和结构感。</em></p>
+<p>重复之所以有效，是因为重复的元素建立了熟悉感并暗示功能：相似的剪影暗示相关组件，重复的颜色表示系统或管道，呼应的结构形式将模型的远端部分联系在一起。</p>
+<hr/>
+<h2 id="常见陷阱">常见陷阱<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#常见陷阱" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="过度细节化">过度细节化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#过度细节化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>最常见的错误，特别是在大型 MOC 中，是<strong>太多</strong>细节。一旦开始添加细节，很难停下来。但太多细节实际上可能让人对你的作品失去兴趣。它导致视觉疲劳，观者变得不堪重负。</p>
+<ul>
+<li>搭建者经常添加<em>细节</em>，而模型实际需要的是<em>信息</em>。</li>
+<li>太多没有<em>信息</em>的<em>细节</em>变成噪音。</li>
+<li><em>信息</em>是观者记住的；<em>细节</em>是他们忘记的。</li>
+</ul>
+<h3 id="忽视焦点">忽视焦点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#忽视焦点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>搭建你的 MOC 可能会激发你的想象力，你开始编造作品中可能发生的故事。然而遗憾的是，观者可能永远无法发现所有这些故事，如果它们迷失在噪音中的话。</p>
+<p>焦点应该包含最高浓度的<em>信息</em>，而不仅仅是纹理。支撑区域应该更安静，使焦点突出。你应该选择你想讲述的几个故事，添加将视线引向它们的焦点。</p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/22a598e5-3ef9-482e-8b9a-ffcd7823fe88/id-1110100919-the-zoo-500xl-artwork.jpg" alt="Jan Van Haasteren 拼图"/>
+<em>例外：在某些情况下，你可能实际上想为观者创造一种混乱的体验。非常详细的图像（如 Jan Van Haasteren 拼图）的目标是用视觉印象轰炸大脑，使其不会过于关注正在发生的事情。如果你追求这种效果，建议写下观者可以发现的故事或场景清单。</em></p>
+<h3 id="均匀纹理">均匀纹理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#均匀纹理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>太多相同的东西也会让大脑失去兴趣。考虑用彩色线条或揭示不同结构的开口来打破表面。另外，如果你的细节过于均匀分布，可能会被感知为单调。</p>
+<hr/>
+<h2 id="搭建建议">搭建建议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#搭建建议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>如果你对上述内容感兴趣并想在下一个作品中尝试，这里有一些可以尝试的建议：</p>
+<ul>
+<li><strong>先草绘你的作品</strong>：标记焦点区域和细节梯度。</li>
+<li><strong>使用摄影</strong>：通过相机查看你的作品来测试视觉流动。</li>
+<li><strong>问自己</strong>：“我希望观者的视线首先去哪里？”</li>
+<li><strong>忍痛割爱</strong>：尝试删除不添加信息的细节。</li>
+<li><strong>实验</strong>：有意地变化纹理、颜色和细节。</li>
+</ul>
+<hr/>
+<h2 id="细节分布清单">细节分布清单<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#细节分布清单" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="视觉层级-1">视觉层级<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#视觉层级-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>观者是否有一个清晰的”第一眼注意到的”东西？</li>
+<li>细节是否支持从一个区域到另一个区域的叙事流动？</li>
+</ul>
+<h3 id="焦点-1">焦点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#焦点-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>我是否选择了一个或两个值得额外关注的区域？</li>
+<li>颜色、对比或纹理是否将视线引向它们？</li>
+</ul>
+<h3 id="负空间-1">负空间<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#负空间-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>是否有眼睛可以休息的安静区域？</li>
+<li>这些空白区域是否增强了附近的细节？</li>
+</ul>
+<h3 id="比例与尺度">比例与尺度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#比例与尺度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>细节是否适合模型的预期尺度？</li>
+<li>细节密度是否在整个作品中保持一致？</li>
+</ul>
+<h3 id="色彩与材质对比">色彩与材质对比<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#色彩与材质对比" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>颜色选择是否帮助分离功能或突出特征？</li>
+<li>是否有光滑、有凸粒和纹理表面的良好混合？</li>
+</ul>
+<h3 id="节奏与重复">节奏与重复<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#节奏与重复" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>是否有重复的形状或主题创造设计语言？</li>
+<li>重复是否足够变化以避免单调？</li>
+</ul>
+<h3 id="有目的的细节">有目的的细节<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#有目的的细节" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>每个细节是否传达了某些东西（功能、故事、结构）？</li>
+<li>移除一个细节是否能提高清晰度？</li>
+</ul>
+<h3 id="最终检查">最终检查<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#最终检查" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>MOC 在远距离拍摄时是否清晰可读？</li>
+<li>眼睛是否自然地遵循你设想的路径？</li>
+</ul>
+<hr/>
+<h2 id="结论">结论<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#结论" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>细节分布不仅仅是技术选择——它是一个叙事工具。通过应用设计理论，你可以引导观者的体验、激发情感，并将你的作品从好提升到令人难忘。无论你是在建造一个安静的村庄还是混乱的战场，请记住：每一颗积木都在讲述一个故事。确保细节知道该去哪里。</p>
+<p><em>BrickNerd Deep Dive — 原文最初发布于2026年2月2日。</em></p>
+<hr/>
+<h2 id="相关实体">相关实体<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关实体" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/乐高MOC细节分布" class="internal alias" data-slug="entities/乐高MOC细节分布">乐高MOC细节分布</a></li>
+</ul>
+<h2 id="相关主题">相关主题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关主题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/乐高MOC创作过程" class="internal alias" data-slug="entities/乐高MOC创作过程">乐高MOC创作过程</a></li>
+<li><a href="../entities/乐高写实主义创作" class="internal alias" data-slug="entities/乐高写实主义创作">乐高写实主义创作</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-650" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#从噪音到叙事乐高moc中的细节分布" data-for="从噪音到叙事乐高moc中的细节分布">从噪音到叙事：乐高MOC中的细节分布</a></li><li class="depth-1"><a href="#概述" data-for="概述">概述</a></li><li class="depth-1"><a href="#完整内容" data-for="完整内容">完整内容</a></li><li class="depth-1"><a href="#什么是细节分布" data-for="什么是细节分布">什么是”细节分布”？</a></li><li class="depth-1"><a href="#设计理论基础" data-for="设计理论基础">设计理论基础</a></li><li class="depth-2"><a href="#视觉层级" data-for="视觉层级">视觉层级</a></li><li class="depth-2"><a href="#焦点" data-for="焦点">焦点</a></li><li class="depth-2"><a href="#平衡与对称" data-for="平衡与对称">平衡与对称</a></li><li class="depth-2"><a href="#接近性" data-for="接近性">接近性</a></li><li class="depth-2"><a href="#负空间" data-for="负空间">负空间</a></li><li class="depth-1"><a href="#细节分布技巧" data-for="细节分布技巧">细节分布技巧</a></li><li class="depth-2"><a href="#分层" data-for="分层">分层</a></li><li class="depth-2"><a href="#色块划分" data-for="色块划分">色块划分</a></li><li class="depth-2"><a href="#纹理变化" data-for="纹理变化">纹理变化</a></li><li class="depth-2"><a href="#重复" data-for="重复">重复</a></li><li class="depth-1"><a href="#常见陷阱" data-for="常见陷阱">常见陷阱</a></li><li class="depth-2"><a href="#过度细节化" data-for="过度细节化">过度细节化</a></li><li class="depth-2"><a href="#忽视焦点" data-for="忽视焦点">忽视焦点</a></li><li class="depth-2"><a href="#均匀纹理" data-for="均匀纹理">均匀纹理</a></li><li class="depth-1"><a href="#搭建建议" data-for="搭建建议">搭建建议</a></li><li class="depth-1"><a href="#细节分布清单" data-for="细节分布清单">细节分布清单</a></li><li class="depth-2"><a href="#视觉层级-1" data-for="视觉层级-1">视觉层级</a></li><li class="depth-2"><a href="#焦点-1" data-for="焦点-1">焦点</a></li><li class="depth-2"><a href="#负空间-1" data-for="负空间-1">负空间</a></li><li class="depth-2"><a href="#比例与尺度" data-for="比例与尺度">比例与尺度</a></li><li class="depth-2"><a href="#色彩与材质对比" data-for="色彩与材质对比">色彩与材质对比</a></li><li class="depth-2"><a href="#节奏与重复" data-for="节奏与重复">节奏与重复</a></li><li class="depth-2"><a href="#有目的的细节" data-for="有目的的细节">有目的的细节</a></li><li class="depth-2"><a href="#最终检查" data-for="最终检查">最终检查</a></li><li class="depth-1"><a href="#结论" data-for="结论">结论</a></li><li class="depth-1"><a href="#相关实体" data-for="相关实体">相关实体</a></li><li class="depth-1"><a href="#相关主题" data-for="相关主题">相关主题</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

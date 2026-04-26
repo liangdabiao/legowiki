@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>乐高数字设计工作流</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="乐高搭建合集 Wiki"/><meta property="og:title" content="乐高数字设计工作流"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="乐高数字设计工作流"/><meta name="twitter:description" content="乐高数字设计工作流 定义与概述 数字乐高构建是指使用软件工具在虚拟环境中创建乐高模型的过程。从早期的LDraw到现代的BrickLink Studio，这项技术已经从爱好者的好奇心发展成为专业乐高设计师和MOC建造者的必备工具。 项目展示图片 Felix Dyson数字作品集锦 VSS “Yet to Be Named”飞艇，Felix Dyson的标志性数字设计 Transient Slipstream II概念艺术，展示了数字到漫画的工作流 Legionary士兵设计，数字乐高与漫画艺术的融合 数字设计作品展示 Space ZIG，未来主义数字设计 Liberator飞行器数字概念 Vin..."/><meta property="og:description" content="乐高数字设计工作流 定义与概述 数字乐高构建是指使用软件工具在虚拟环境中创建乐高模型的过程。从早期的LDraw到现代的BrickLink Studio，这项技术已经从爱好者的好奇心发展成为专业乐高设计师和MOC建造者的必备工具。 项目展示图片 Felix Dyson数字作品集锦 VSS “Yet to Be Named”飞艇，Felix Dyson的标志性数字设计 Transient Slipstream II概念艺术，展示了数字到漫画的工作流 Legionary士兵设计，数字乐高与漫画艺术的融合 数字设计作品展示 Space ZIG，未来主义数字设计 Liberator飞行器数字概念 Vin..."/><meta property="og:image:alt" content="乐高数字设计工作流 定义与概述 数字乐高构建是指使用软件工具在虚拟环境中创建乐高模型的过程。从早期的LDraw到现代的BrickLink Studio，这项技术已经从爱好者的好奇心发展成为专业乐高设计师和MOC建造者的必备工具。 项目展示图片 Felix Dyson数字作品集锦 VSS “Yet to Be Named”飞艇，Felix Dyson的标志性数字设计 Transient Slipstream II概念艺术，展示了数字到漫画的工作流 Legionary士兵设计，数字乐高与漫画艺术的融合 数字设计作品展示 Space ZIG，未来主义数字设计 Liberator飞行器数字概念 Vin..."/><meta property="og:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://lego-wiki.pages.dev"/><meta property="og:url" content="https://https//lego-wiki.pages.dev/entities/乐高数字设计工作流"/><meta property="twitter:url" content="https://https//lego-wiki.pages.dev/entities/乐高数字设计工作流"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="乐高数字设计工作流 定义与概述 数字乐高构建是指使用软件工具在虚拟环境中创建乐高模型的过程。从早期的LDraw到现代的BrickLink Studio，这项技术已经从爱好者的好奇心发展成为专业乐高设计师和MOC建造者的必备工具。 项目展示图片 Felix Dyson数字作品集锦 VSS “Yet to Be Named”飞艇，Felix Dyson的标志性数字设计 Transient Slipstream II概念艺术，展示了数字到漫画的工作流 Legionary士兵设计，数字乐高与漫画艺术的融合 数字设计作品展示 Space ZIG，未来主义数字设计 Liberator飞行器数字概念 Vin..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXGxlZ28tbGxtLXdpa2lcXHF1YXJ0elxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://https://lego-wiki.pages.dev/index.xml"/></head><body data-slug="entities/乐高数字设计工作流"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">乐高搭建合集 Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-519"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-519" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../entities/">entities</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>乐高数字设计工作流</a></div></nav><h1 class="article-title">乐高数字设计工作流</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-25T16:00:00.000Z">2026年4月26日</time><span>11分钟阅读</span></p></div></div><article class="popover-hint"><h1 id="乐高数字设计工作流">乐高数字设计工作流<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#乐高数字设计工作流" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="定义与概述">定义与概述<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#定义与概述" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>数字乐高构建是指使用软件工具在虚拟环境中创建乐高模型的过程。从早期的LDraw到现代的BrickLink Studio，这项技术已经从爱好者的好奇心发展成为专业乐高设计师和MOC建造者的必备工具。</p>
+<h2 id="项目展示图片">项目展示图片<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#项目展示图片" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="felix-dyson数字作品集锦">Felix Dyson数字作品集锦<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#felix-dyson数字作品集锦" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616081996934-HLPLNUZKR2GZGPS146Z6/VSS+-+To+Be+Named.png" alt="VSS Yet to Be Named飞艇设计"/>
+<em>VSS “Yet to Be Named”飞艇，Felix Dyson的标志性数字设计</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082188469-2NC2U2VK56X08XRT6YFY/Transient+Slipstream.png" alt="Transient Slipstream飞艇概念图"/>
+<em>Transient Slipstream II概念艺术，展示了数字到漫画的工作流</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082307288-DHUJU9BGJGIOYVJYMKTB/Legionary-composite.png" alt="Legionary复合设计图"/>
+<em>Legionary士兵设计，数字乐高与漫画艺术的融合</em></p>
+<h3 id="数字设计作品展示">数字设计作品展示<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数字设计作品展示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082555927-XQNNLF49TIKMAGXKM8YK/Space-ZIG.png" alt="Space ZIG设计"/>
+<em>Space ZIG，未来主义数字设计</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082564175-X0ELCLTGO98Q0Q1JYSLB/Liberator.png" alt="Liberator设计"/>
+<em>Liberator飞行器数字概念</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082560868-4FXZYTQITCTNSBAD8Y8C/Vindictus-render.png" alt="Vindictus渲染图"/>
+<em>Vindictus渲染，展示高级数字光照效果</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082555773-7MBYZ89UGHP3J31BDIJN/Vindictus-fire.png" alt="Vindictus火焰特效"/>
+<em>Vindictus火焰特效，数字后处理增强</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082560414-BCPC831UQ5H7BHYMFEMS/A-Avenger.png" alt="A-Avenger设计"/>
+<em>A-Avenger防御系统设计</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082563731-N69TAKJ6X34KC3PXH0OD/A-Defender.png" alt="A-Defender设计"/>
+<em>A-Defender防护装置概念</em></p>
+<h3 id="jade-rabbit项目展示">Jade Rabbit项目展示<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#jade-rabbit项目展示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616201611158-FKO8HD8JV4VGJD3V45D2/Jade+Rabbit-IRL.png" alt="Jade Rabbit现实构建照片"/>
+<em>Jade Rabbit从数字设计到物理构建的转变</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616082561792-60X09EQUCHDGTQKD3PAL/Jade+Rabbit+Pierce.png" alt="Jade Rabbit穿刺特效"/>
+<em>Jade Rabbit “Pierce the Void”特效设计</em></p>
+<h2 id="历史发展">历史发展<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#历史发展" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="ldraw时代1990年代">LDraw时代（1990年代）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ldraw时代1990年代" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>由澳大利亚的James Jessiman创建，LDraw开创了虚拟乐高构建的概念：</p>
+<ul>
+<li>基于文本的零件库格式，可扩展</li>
+<li>社区驱动的零件创建</li>
+<li>渲染器和查看器的生态系统</li>
+<li>2021年活跃的零件库包含10,000+个单独的零件定义</li>
+</ul>
+<p>不幸的是，Jessiman在26岁时死于流感并发症，他从未看到他的创作全面开花结果。</p>
+<h3 id="lego-digital-designerldd2004-2016">LEGO Digital Designer（LDD，2004-2016）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lego-digital-designerldd2004-2016" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>乐高集团的官方数字设计工具：</p>
+<ul>
+<li>第一个主流虚拟乐高环境</li>
+<li>与BrickLink集成的”设计我”功能</li>
+<li>2016年逐步淘汰，转而支持Studio</li>
+<li>尽管已停产，但在老派建造者中仍有忠实追随者</li>
+</ul>
+<h3 id="studio时代2018年至今">Studio时代（2018年至今）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#studio时代2018年至今" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>由BrickLink开发并在被乐高集团收购后继续，Studio成为行业标准：</p>
+<ul>
+<li>现代渲染引擎，具有照片级真实感输出</li>
+<li>原生BrickLink集成，用于一键零件订购</li>
+<li>协作功能和云存储</li>
+<li>自定义零件创建和子模型库</li>
+</ul>
+<h2 id="专业数字构建工作流">专业数字构建工作流<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#专业数字构建工作流" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="felix-dyson的漫画集成方法">Felix Dyson的漫画集成方法<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#felix-dyson的漫画集成方法" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>数字艺术家兼网络漫画创作者Felix Dyson开创了将乐高数字设计集成到插图工作流中的方法：</p>
+<h4 id="工作流步骤">工作流步骤<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#工作流步骤" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ol>
+<li><strong>概念草图</strong>：传统铅笔和纸张用于初始设计思路</li>
+<li><strong>Studio/LDD构建</strong>：在虚拟环境中精确建模对象</li>
+<li><strong>导出基础图像</strong>：高分辨率基础渲染导出到Adobe Animate</li>
+<li><strong>线条艺术处理</strong>：数字墨线和轮廓增强</li>
+<li><strong>颜色和光照</strong>：数字绘画和效果，以达到最终漫画质量</li>
+<li><strong>场景合成</strong>：将乐高科技与角色和背景整合</li>
+</ol>
+<h4 id="这种方法的优势">这种方法的优势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#这种方法的优势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>一致的视角</strong>：复杂物体（如飞艇）在多个面板中保持完美一致</li>
+<li><strong>机械准确性</strong>：齿轮、发动机和机械装置在功能上是正确的，而不仅仅是暗示</li>
+<li><strong>速度</strong>：一旦设计完成，可以快速生成新的角度</li>
+<li><strong>设计迭代</strong>：可以在不重新绘制所有内容的情况下测试设计更改</li>
+</ul>
+<h3 id="从数字到物理的管道">从数字到物理的管道<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#从数字到物理的管道" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将数字设计转换为真实乐高的标准工作流：</p>
+<ol>
+<li><strong>设计验证</strong>：在Studio中检查连接完整性</li>
+<li><strong>零件清单生成</strong>：自动BOM创建</li>
+<li><strong>BrickLink集成</strong>：直接导入到愿望清单或购物车</li>
+<li><strong>构建说明生成</strong>：使用Stud.io或其他说明软件</li>
+<li><strong>物理构建</strong>：零件到达后进行组装</li>
+<li><strong>偏差校正</strong>：记录数字设计与物理现实之间的差异</li>
+</ol>
+<h2 id="数字与物理构建的挑战">数字与物理构建的挑战<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数字与物理构建的挑战" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="重力不适用问题">重力不适用问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#重力不适用问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>在虚拟环境中常见的陷阱：</p>
+<ul>
+<li><strong>不可能的悬臂</strong>：数字世界中100块砖的悬臂完全没问题——在物理上，它会立即倒塌</li>
+<li><strong>无限连接强度</strong>：销和砖在数字中永远不会滑动或分离</li>
+<li><strong>无弯曲或挠曲</strong>：数字梁不会因重量而下垂</li>
+<li><strong>缺失的零件碰撞</strong>：软件可能会错过现实中冲突的零件</li>
+</ul>
+<h3 id="翻译过程">翻译过程<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#翻译过程" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Felix Dyson的经验法则：任何数字设计的70-80%可以直接构建。剩余的20-30%需要：</p>
+<ul>
+<li>加强薄弱或柔性的连接</li>
+<li>为长跨度添加隐藏的支撑</li>
+<li>在高应力区域用更坚固的零件替换装饰零件</li>
+<li>在物理构建后调整颜色选择（屏幕颜色与实际砖颜色不匹配）</li>
+</ul>
+<h2 id="数字艺术与乐高的结合">数字艺术与乐高的结合<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数字艺术与乐高的结合" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="插画工作流集成">插画工作流集成<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#插画工作流集成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>乐高作为3D建模工具为艺术家提供了独特的优势：</p>
+<p><strong>受限创造</strong>：乐高中可用的特定零件库强制创造性地解决问题。这种约束实际上促进了创新的设计解决方案。</p>
+<p><strong>机械真实性</strong>：乐高齿轮、轴和连杆功能完美——这意味着你设计的任何东西都可以物理工作。这给插图的机械元素增添了一种其他3D工具难以实现的真实感。</p>
+<p><strong>社区验证</strong>：当你在Flickr或其他平台上发布乐高设计时，其他建造者会立即告诉你它是否有效。这种同行评审改进了整个艺术作品。</p>
+<h3 id="示例遥远的天空网络漫画">示例：“遥远的天空”网络漫画<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#示例遥远的天空网络漫画" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Felix Dyson的网络漫画”遥远的天空”使用乐高数字设计作为主要创作工具：</p>
+<ul>
+<li><strong>飞艇舰队</strong>：每艘船首先在乐高数字设计，然后渲染，然后转换为线条艺术</li>
+<li><strong>环境设计</strong>：建筑物、车辆和环境元素都从乐高模型开始</li>
+<li><strong>角色整合</strong>：乐高比例的几何影响角色设计和场景构成</li>
+<li><strong>一致性</strong>：100+集的整个世界在视觉上保持一致</li>
+</ul>
+<h2 id="专业技术与技巧">专业技术与技巧<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#专业技术与技巧" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="高级渲染技术">高级渲染技术<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#高级渲染技术" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Keyshot集成</strong>：对于照片级真实感，许多专业建造者将Studio模型导出到Keyshot</li>
+<li><strong>Blender管道</strong>：将Stud.io文件导入Blender进行电影质量渲染和动画</li>
+<li><strong>材质调整</strong>：超越标准ABS塑料——创建风化、刮擦、损坏的砖块材质</li>
+<li><strong>自定义光照设置</strong>：工作室、室外、赛博朋克等光照预设</li>
+</ol>
+<h3 id="协作数字构建">协作数字构建<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#协作数字构建" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>子模型库</strong>：团队在共享库中维护常用子组件</li>
+<li><strong>版本控制</strong>：虽然不像代码那样先进，但存在对乐高设计进行版本控制的系统</li>
+<li><strong>设计评审</strong>：数字模型可以轻松共享以进行评论和迭代</li>
+</ol>
+<h2 id="教育应用">教育应用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#教育应用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="数字构建作为教学工具">数字构建作为教学工具<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数字构建作为教学工具" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>空间推理</strong>：优秀的STEM学习工具——学生在3D中可视化和操作</li>
+<li><strong>工程原理</strong>：在投入物理材料之前测试结构</li>
+<li><strong>预算管理</strong>：在购买单个零件之前规划项目成本</li>
+<li><strong>文档</strong>：易于创建构建说明和演示文稿</li>
+</ol>
+<h2 id="挑战与限制">挑战与限制<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#挑战与限制" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="软件生态系统碎片化">软件生态系统碎片化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#软件生态系统碎片化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>多个不兼容的平台造成摩擦：</p>
+<ul>
+<li>Studio与LDraw零件库不完全兼容</li>
+<li>旧LDD文件难以转换为现代格式</li>
+<li>自定义零件在不同工具之间经常中断</li>
+<li>不同渲染引擎之间的颜色匹配不一致</li>
+</ul>
+<h3 id="零件库滞后">零件库滞后<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#零件库滞后" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>新乐高零件出现与出现在数字库中之间总是存在延迟：</p>
+<ul>
+<li>官方乐高套装通常在发布前6-12个月设计</li>
+<li>社区零件创建通常在零售发布后1-3个月</li>
+<li>稀有或独家零件可能永远不会被数字化</li>
+</ul>
+<h2 id="未来方向">未来方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#未来方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="增强现实集成">增强现实集成<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#增强现实集成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>数字和物理乐高构建的下一个前沿：</p>
+<ul>
+<li><strong>实时数字叠加</strong>：将数字设计投影到物理构建空间上</li>
+<li><strong>AR构建指南</strong>：全息说明浮动在你的构建板上</li>
+<li><strong>混合MOC</strong>：部分物理，部分数字——用于摄影和艺术</li>
+</ul>
+<h3 id="ai辅助设计">AI辅助设计<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai辅助设计" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>机器学习开始影响数字乐高：</p>
+<ul>
+<li><strong>自动零件替换</strong>：AI建议更便宜或更容易获得的等效零件</li>
+<li><strong>结构分析</strong>：自动检测数字模型中的薄弱点</li>
+<li><strong>生成设计</strong>：AI根据高级参数提出完整的构建</li>
+</ul>
+<h3 id="社区平台进化">社区平台进化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区平台进化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>数字乐高社区正在汇集新平台：</p>
+<ul>
+<li>带内置3D查看器的MOC分享网站</li>
+<li>数字构建的现场协作工具</li>
+<li>集成零件采购和市场功能</li>
+</ul>
+<h2 id="相关页面">相关页面<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关页面" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/乐高MOC创作过程" class="internal alias" data-slug="entities/乐高MOC创作过程">乐高MOC创作过程</a></li>
+<li><a href="../数字乐高构建" class="internal alias" data-slug="数字乐高构建">数字乐高构建</a></li>
+<li><a href="../乐高艺术创作" class="internal alias" data-slug="乐高艺术创作">乐高艺术创作</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-257" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#乐高数字设计工作流" data-for="乐高数字设计工作流">乐高数字设计工作流</a></li><li class="depth-1"><a href="#定义与概述" data-for="定义与概述">定义与概述</a></li><li class="depth-1"><a href="#项目展示图片" data-for="项目展示图片">项目展示图片</a></li><li class="depth-2"><a href="#felix-dyson数字作品集锦" data-for="felix-dyson数字作品集锦">Felix Dyson数字作品集锦</a></li><li class="depth-2"><a href="#数字设计作品展示" data-for="数字设计作品展示">数字设计作品展示</a></li><li class="depth-2"><a href="#jade-rabbit项目展示" data-for="jade-rabbit项目展示">Jade Rabbit项目展示</a></li><li class="depth-1"><a href="#历史发展" data-for="历史发展">历史发展</a></li><li class="depth-2"><a href="#ldraw时代1990年代" data-for="ldraw时代1990年代">LDraw时代（1990年代）</a></li><li class="depth-2"><a href="#lego-digital-designerldd2004-2016" data-for="lego-digital-designerldd2004-2016">LEGO Digital Designer（LDD，2004-2016）</a></li><li class="depth-2"><a href="#studio时代2018年至今" data-for="studio时代2018年至今">Studio时代（2018年至今）</a></li><li class="depth-1"><a href="#专业数字构建工作流" data-for="专业数字构建工作流">专业数字构建工作流</a></li><li class="depth-2"><a href="#felix-dyson的漫画集成方法" data-for="felix-dyson的漫画集成方法">Felix Dyson的漫画集成方法</a></li><li class="depth-2"><a href="#从数字到物理的管道" data-for="从数字到物理的管道">从数字到物理的管道</a></li><li class="depth-1"><a href="#数字与物理构建的挑战" data-for="数字与物理构建的挑战">数字与物理构建的挑战</a></li><li class="depth-2"><a href="#重力不适用问题" data-for="重力不适用问题">重力不适用问题</a></li><li class="depth-2"><a href="#翻译过程" data-for="翻译过程">翻译过程</a></li><li class="depth-1"><a href="#数字艺术与乐高的结合" data-for="数字艺术与乐高的结合">数字艺术与乐高的结合</a></li><li class="depth-2"><a href="#插画工作流集成" data-for="插画工作流集成">插画工作流集成</a></li><li class="depth-2"><a href="#示例遥远的天空网络漫画" data-for="示例遥远的天空网络漫画">示例：“遥远的天空”网络漫画</a></li><li class="depth-1"><a href="#专业技术与技巧" data-for="专业技术与技巧">专业技术与技巧</a></li><li class="depth-2"><a href="#高级渲染技术" data-for="高级渲染技术">高级渲染技术</a></li><li class="depth-2"><a href="#协作数字构建" data-for="协作数字构建">协作数字构建</a></li><li class="depth-1"><a href="#教育应用" data-for="教育应用">教育应用</a></li><li class="depth-2"><a href="#数字构建作为教学工具" data-for="数字构建作为教学工具">数字构建作为教学工具</a></li><li class="depth-1"><a href="#挑战与限制" data-for="挑战与限制">挑战与限制</a></li><li class="depth-2"><a href="#软件生态系统碎片化" data-for="软件生态系统碎片化">软件生态系统碎片化</a></li><li class="depth-2"><a href="#零件库滞后" data-for="零件库滞后">零件库滞后</a></li><li class="depth-1"><a href="#未来方向" data-for="未来方向">未来方向</a></li><li class="depth-2"><a href="#增强现实集成" data-for="增强现实集成">增强现实集成</a></li><li class="depth-2"><a href="#ai辅助设计" data-for="ai辅助设计">AI辅助设计</a></li><li class="depth-2"><a href="#社区平台进化" data-for="社区平台进化">社区平台进化</a></li><li class="depth-1"><a href="#相关页面" data-for="相关页面">相关页面</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

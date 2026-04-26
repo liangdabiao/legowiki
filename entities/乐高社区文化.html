@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>乐高社区文化</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="乐高搭建合集 Wiki"/><meta property="og:title" content="乐高社区文化"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="乐高社区文化"/><meta name="twitter:description" content="乐高社区文化 定义与概述 乐高AFOL（Adult Fans of LEGO）社区是世界上最具活力和支持性的创意社区之一。从本地LUG（LEGO User Group）会议到国际大会，这种文化通过共同的创造热情、知识共享和相互鼓励而蓬勃发展。 项目展示图片 社区媒体生态 BrickNerd月度社区头条与亮点——AFOL社区的核心信息枢纽 Bits N’ Bricks播客：乐高宇宙纪录片系列 Blocks Magazine：LEGO Originals系列深度报道 荷兰Bouwsteentjes杂志：“你内心有Iron Builder吗？” Brick Architect深度技术分析：乐高官方离..."/><meta property="og:description" content="乐高社区文化 定义与概述 乐高AFOL（Adult Fans of LEGO）社区是世界上最具活力和支持性的创意社区之一。从本地LUG（LEGO User Group）会议到国际大会，这种文化通过共同的创造热情、知识共享和相互鼓励而蓬勃发展。 项目展示图片 社区媒体生态 BrickNerd月度社区头条与亮点——AFOL社区的核心信息枢纽 Bits N’ Bricks播客：乐高宇宙纪录片系列 Blocks Magazine：LEGO Originals系列深度报道 荷兰Bouwsteentjes杂志：“你内心有Iron Builder吗？” Brick Architect深度技术分析：乐高官方离..."/><meta property="og:image:alt" content="乐高社区文化 定义与概述 乐高AFOL（Adult Fans of LEGO）社区是世界上最具活力和支持性的创意社区之一。从本地LUG（LEGO User Group）会议到国际大会，这种文化通过共同的创造热情、知识共享和相互鼓励而蓬勃发展。 项目展示图片 社区媒体生态 BrickNerd月度社区头条与亮点——AFOL社区的核心信息枢纽 Bits N’ Bricks播客：乐高宇宙纪录片系列 Blocks Magazine：LEGO Originals系列深度报道 荷兰Bouwsteentjes杂志：“你内心有Iron Builder吗？” Brick Architect深度技术分析：乐高官方离..."/><meta property="og:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://lego-wiki.pages.dev"/><meta property="og:url" content="https://https//lego-wiki.pages.dev/entities/乐高社区文化"/><meta property="twitter:url" content="https://https//lego-wiki.pages.dev/entities/乐高社区文化"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="乐高社区文化 定义与概述 乐高AFOL（Adult Fans of LEGO）社区是世界上最具活力和支持性的创意社区之一。从本地LUG（LEGO User Group）会议到国际大会，这种文化通过共同的创造热情、知识共享和相互鼓励而蓬勃发展。 项目展示图片 社区媒体生态 BrickNerd月度社区头条与亮点——AFOL社区的核心信息枢纽 Bits N’ Bricks播客：乐高宇宙纪录片系列 Blocks Magazine：LEGO Originals系列深度报道 荷兰Bouwsteentjes杂志：“你内心有Iron Builder吗？” Brick Architect深度技术分析：乐高官方离..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXGxlZ28tbGxtLXdpa2lcXHF1YXJ0elxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://https://lego-wiki.pages.dev/index.xml"/></head><body data-slug="entities/乐高社区文化"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">乐高搭建合集 Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-630"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-630" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../entities/">entities</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>乐高社区文化</a></div></nav><h1 class="article-title">乐高社区文化</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-25T16:00:00.000Z">2026年4月26日</time><span>14分钟阅读</span></p></div></div><article class="popover-hint"><h1 id="乐高社区文化">乐高社区文化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#乐高社区文化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="定义与概述">定义与概述<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#定义与概述" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>乐高AFOL（Adult Fans of LEGO）社区是世界上最具活力和支持性的创意社区之一。从本地LUG（LEGO User Group）会议到国际大会，这种文化通过共同的创造热情、知识共享和相互鼓励而蓬勃发展。</p>
+<h2 id="项目展示图片">项目展示图片<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#项目展示图片" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="社区媒体生态">社区媒体生态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区媒体生态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1612073025118-R869E3LVFJWUZO6KI77/BrickNerd%27s+LEGO+Community+Headlines+%26+Highlights.png" alt="BrickNerd社区头条"/>
+<em>BrickNerd月度社区头条与亮点——AFOL社区的核心信息枢纽</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617167422713-P4X9P01RMNIZHTK5ZMPN/Screenshot+%28969%29.png" alt="Bits N' Bricks播客"/>
+<em>Bits N’ Bricks播客：乐高宇宙纪录片系列</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617164444421-P48Z7TXC8YFV9HW9ZNCG/LEGO-Originals-wooden-minifigure-history-theme.jpg" alt="LEGO Originals系列"/>
+<em>Blocks Magazine：LEGO Originals系列深度报道</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617167002544-T8FJ2YVZHPNOV85GO7I7/Schuilt-er-een-Iron-Builder-in-jou_-1.jpg" alt="Iron Builder竞赛"/>
+<em>荷兰Bouwsteentjes杂志：“你内心有Iron Builder吗？”</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1616237628936-GO3I32B4CK06VXKAHI51/Brick_Architect-LEGO_Test_Implements-Cover_Image-1200x630.jpg" alt="乐高离合器测试部件"/>
+<em>Brick Architect深度技术分析：乐高官方离合器测试部件揭秘</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617166377589-XGARSJ7IQRNENOILHGOS/50969013127_f1c323cb2f_c.jpg" alt="Amelia Earhart致敬套装"/>
+<em>BricksFanz设计师访谈：Amelia Earhart致敬套装幕后创作故事</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617176866539-FM9LV2H4BQ6Y67N2SXLW/58634_0-ArticleTeaser-SWAlienPetsBeasts.jpg" alt="星球大战外星宠物与野兽"/>
+<em>Brickset深度解析：星球大战外星宠物与野兽</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617165502246-RYT7OIOAE975P0S5QQ86/LEGO-International-Womens-Day-2021-Feature-Photo-1024x536.png" alt="国际妇女节专题"/>
+<em>Jay’s Brick Blog：国际妇女节专题——50位你应该关注的女乐高设计师与创意人</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617163701787-B0WRFPSKCA5FGJIZCV0L/history-of-lego-magnets-old-parts.jpg" alt="乐高磁铁历史"/>
+<em>New Elementary：Old Elementary系列——乐高磁铁的历史考古</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617176379281-RCP24LFLNLH7BTO37SSZ/Eero-Okkonen-LEGO-MOC-Jean-Emergent-Dance.jpg" alt="Eero Okkonen MOC"/>
+<em>New Elementary零件分析：Eero Okkonen的车辆零件创新应用技术</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617170806636-ACKTR4NJ34XEIN7101P2/Octan_Titelbild.jpg" alt="Octan品牌专题"/>
+<em>Promobricks深度专题：如果Octan是一家真实公司——乐高虚构品牌的世界观构建</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617176560124-99JJK3MMH0E79QEHILWN/my-post-225.jpg" alt="白噪音播放列表"/>
+<em>Rambling Brick：乐高白噪音播放列表创意团队独家访谈</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617176639723-FW0PG002GJR769S8EPH4/my-post-222.jpg" alt="性别代表性分析"/>
+<em>Rambling Brick数据新闻：乐高迷你人偶在授权主题中的性别代表性趋势分析</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617169271443-I1ZEIRFAQSFOIJOVYDMO/IMG_1922edt-640x384.jpg" alt="Circuit Cubes评测"/>
+<em>The Brothers Brick技术评测：使用Circuit Cubes构建倾转旋翼飞行器</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617162390778-SOGSJ7A0D2G8R63RHTCQ/80106-LEGO-Chinese-New-Year-Set-Review-3.jpg" alt="中国新年套装"/>
+<em>The Brick Blogger文化专题：年兽的故事——中国新年套装文化解读</em></p>
+<p><img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1617175593142-PHGZQRVBR4W7QFWCCV8PP/comparison-graph.jpg" alt="迷你娃娃vs迷你人偶"/>
+<em>Women’s Brick Initiative研究：迷你娃娃vs迷你人偶——成本分析与性别定价研究</em></p>
+<h2 id="社区的关键价值观">社区的关键价值观<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区的关键价值观" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-没有愚蠢的问题">1. “没有愚蠢的问题”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-没有愚蠢的问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AFOL社区的一个决定性特征是普遍愿意分享知识：</p>
+<ul>
+<li>新成员被积极鼓励提问</li>
+<li>专业建造者慷慨地分享技术和技巧</li>
+<li>没有羞耻的技能水平——每个人都从某个地方开始</li>
+<li>“展示你的作品”文化优先于批评</li>
+</ul>
+<h3 id="2-社区高于竞争">2. 社区高于竞争<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-社区高于竞争" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>虽然存在竞争（Iron Builder、乐高大师等），但合作精神占上风：</p>
+<ul>
+<li>竞争对手经常在比赛之间合作</li>
+<li>获胜者通常会立即花时间指导他人</li>
+<li>竞争被视为推动整个社区前进，而不是个人收益</li>
+</ul>
+<h3 id="3-可及性原则">3. 可及性原则<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-可及性原则" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>社区积极努力包容：</p>
+<ul>
+<li><strong>经济可及性</strong>：DIY光桌、自制分类系统、零件交易</li>
+<li><strong>年龄包容性</strong>：从青少年到退休人员的建造者都受到欢迎</li>
+<li><strong>地理范围</strong>：通过数字社区的全球参与，无论当地LUG是否存在</li>
+<li><strong>神经多样性</strong>：许多AFOL发现乐高对自闭症、多动症和其他疾病有治疗作用</li>
+</ul>
+<h2 id="lug文化">LUG文化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lug文化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="lug的作用">LUG的作用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lug的作用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>乐高用户组是社区的基本单位：</p>
+<ul>
+<li>本地聚会——通常每月一次</li>
+<li>零件交换和集体订单</li>
+<li>公共展览和外展活动</li>
+<li>新建造者的同伴学习</li>
+</ul>
+<h3 id="典型的lug会议议程">典型的LUG会议议程<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#典型的lug会议议程" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>签到和社交</strong>（30分钟）</li>
+<li><strong>展示和讲述</strong>（1小时）——每个成员展示一个MOC</li>
+<li><strong>商业</strong>（15分钟）——即将到来的活动、集体订单</li>
+<li><strong>小组建造</strong>（1-2小时）——协作项目</li>
+<li><strong>非正式交流</strong>（只要人们留下）</li>
+</ol>
+<h3 id="lug治理">LUG治理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lug治理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>大多数LUG在文化上相似，但组织不同：</p>
+<ul>
+<li><strong>民主</strong>：当选官员、投票、正式章程</li>
+<li><strong>非正式</strong>：核心志愿者团体，最少的官僚机构</li>
+<li><strong>赞助</strong>：与当地企业或博物馆合作</li>
+<li><strong>仅在线</strong>：具有虚拟会议的地理分散团体</li>
+</ul>
+<h2 id="会议文化">会议文化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#会议文化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="全球活动生态系统">全球活动生态系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#全球活动生态系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>主要活动的日历全年都很满：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>活动</th><th>地点</th><th>典型出席人数</th></tr></thead><tbody><tr><td>Brickworld Chicago</td><td>美国伊利诺伊州</td><td>3,000+</td></tr><tr><td>BrickCon</td><td>美国华盛顿州西雅图</td><td>2,000+</td></tr><tr><td>Bricks Cascade</td><td>美国俄勒冈州波特兰</td><td>1,500+</td></tr><tr><td>Brick Fiesta</td><td>美国得克萨斯州</td><td>1,000+</td></tr><tr><td>Brickvention</td><td>澳大利亚墨尔本</td><td>2,000+</td></tr><tr><td>Europe Bricks</td><td>各个地点</td><td>1,500+</td></tr></tbody></table></div>
+<h3 id="大会氛围">“大会氛围”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#大会氛围" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>经常被描述为”回家”的感觉：</p>
+<ul>
+<li><strong>即时联系</strong>：陌生人因为共同的热情而立即成为朋友</li>
+<li><strong>无评判环境</strong>：没有人因为玩乐高而”太老”</li>
+<li><strong>极端慷慨</strong>：免费零件、建议和鼓励自由流动</li>
+<li><strong>5天友谊</strong>：一年一度的会议友谊全年通过社交媒体持续</li>
+</ul>
+<h3 id="公共展览与建造者区">公共展览与建造者区<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#公共展览与建造者区" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>会议创造了两个平行的世界：</p>
+<ul>
+<li><strong>公共展厅</strong>：面向家庭，精心布置的展示</li>
+<li><strong>建造者区</strong>：仅限AFOL，未完成的MOC、技术分享、通宵建造派对</li>
+<li><strong>过渡仪式</strong>：第一次从公共区进入建造者区是一个值得纪念的时刻</li>
+</ul>
+<h2 id="数字社区">数字社区<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数字社区" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="flickr时代2005-2018">Flickr时代（2005-2018）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#flickr时代2005-2018" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>对于一代人来说，Flickr是AFOL社区的中心：</p>
+<ul>
+<li><strong>群组系统</strong>：主题MOC的专用群组</li>
+<li><strong>评论文化</strong>：详细、有思想的反馈是常态</li>
+<li><strong>Flickr Friday</strong>：每周主题建造挑战</li>
+<li><strong>存档质量</strong>：十多年的乐高历史仍然可以完全访问</li>
+</ul>
+<h3 id="社交媒体转变2018年至今">社交媒体转变（2018年至今）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社交媒体转变2018年至今" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>平台偏好发生了变化：</p>
+<ul>
+<li><strong>Instagram</strong>：精美照片、短视频</li>
+<li><strong>Reddit r/lego</strong>：主流曝光、病毒式MOC</li>
+<li><strong>Discord</strong>：实时技术支持、群组项目</li>
+<li><strong>YouTube</strong>：教程、速度构建、深度分析</li>
+</ul>
+<h3 id="数字社区的挑战">数字社区的挑战<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数字社区的挑战" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>向短视频格式的转变改变了动态：</p>
+<ul>
+<li><strong>深度与广度</strong>：15秒的TikTok可以接触到数百万人，但缺乏技术深度</li>
+<li><strong>算法偏差</strong>：“哇”因素胜过知识共享</li>
+<li><strong>评论崩溃</strong>：YouTube和TikTok评论缺乏Flickr时代的实质性反馈</li>
+</ul>
+<h2 id="社区媒体生态系统">社区媒体生态系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区媒体生态系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="bricknerd的作用">BrickNerd的作用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bricknerd的作用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>作为领先的乐高社区出版物，BrickNerd发挥着关键的文化作用：</p>
+<ul>
+<li><strong>策划质量</strong>：在噪音中提升最佳作品</li>
+<li><strong>叙事</strong>：不仅仅是展示MOC——讲述建造者背后的故事</li>
+<li><strong>月度综述</strong>：“社区头条和亮点”已成为一项机构</li>
+<li><strong>讨论论坛</strong>：关于社区问题的文明对话空间</li>
+</ul>
+<h3 id="月度综述现象">月度综述现象<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#月度综述现象" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>BrickNerd的月度社区综述已成为文化基石：</p>
+<ul>
+<li><strong>发现</strong>：每周有数百个新MOC，这个综述展示了最好的</li>
+<li><strong>交叉授粉</strong>：城堡建造者发现太空MOC，反之亦然</li>
+<li><strong>验证</strong>：被收录在综述中被认为是一种荣誉</li>
+<li><strong>历史档案</strong>：成为乐高社区趋势和兴趣的记录</li>
+</ul>
+<h3 id="其他关键媒体">其他关键媒体<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#其他关键媒体" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Blocks Magazine</strong>：印刷，深入专题</li>
+<li><strong>New Elementary</strong>：零件分析，新套装深入探讨</li>
+<li><strong>The Brothers Brick</strong>：MOC特色，套装评论，行业新闻</li>
+<li><strong>Rambling Brick</strong>：社论，观点，文化分析</li>
+<li><strong>Brickset</strong>：套装数据库，价格指南，收藏管理</li>
+</ul>
+<h2 id="建造仪式和传统">建造仪式和传统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#建造仪式和传统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="砖块浴">”砖块浴”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#砖块浴" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>新零件的标准准备：</p>
+<ul>
+<li>大宗BrickLink订单到达</li>
+<li>所有零件转储到一个大容器中</li>
+<li>播放音乐或播客</li>
+<li>2-4小时的宁静分类冥想</li>
+<li>结果：按颜色和类型组织的零件</li>
+</ul>
+<h3 id="afol之夜">”AFOL之夜”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#afol之夜" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>许多LUG有非正式的每周聚会：</p>
+<ul>
+<li>通常在某人的车库或地下室</li>
+<li>带来你正在做的任何事情</li>
+<li>技术支持，零件借用，想法分享</li>
+<li>通常有食物——披萨是通用的AFOL燃料</li>
+</ul>
+<h3 id="展示准备仪式">展示准备仪式<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#展示准备仪式" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>为会议做准备涉及神圣的仪式：</p>
+<ul>
+<li><strong>最后冲刺</strong>：会议前72小时几乎不睡</li>
+<li>“它会适合车吗？“——包装 Tetris</li>
+<li><strong>紧急零件运行</strong>：总是有东西在运输中破裂</li>
+<li><strong>“我会在那里完成它”</strong>——在酒店走廊建造的悠久传统</li>
+</ul>
+<h2 id="社区挑战与争议">社区挑战与争议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区挑战与争议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="包容性紧张关系">包容性紧张关系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#包容性紧张关系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>尽管有核心价值观，社区仍在与问题作斗争：</p>
+<ul>
+<li><strong>性别代表性</strong>：女性建造者在顶尖人才中的代表性仍然不足</li>
+<li><strong>经济多样性</strong>：昂贵的零件收藏创造了进入壁垒</li>
+<li><strong>全球北方偏见</strong>：活动和媒体对欧洲和北美的关注不成比例</li>
+<li><strong>代际转变</strong>：老年AFOL与年轻建造者对媒介的看法不同</li>
+</ul>
+<h3 id="精英主义辩论">”精英主义”辩论<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#精英主义辩论" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>一个反复出现的紧张来源：</p>
+<ul>
+<li><strong>名人建造者</strong>：一些人获得了类似摇滚明星的地位</li>
+<li><strong>访问问题</strong>：被排除在某些Discord服务器或协作项目之外的感觉</li>
+<li><strong>质量门控</strong>：关于”只有最好的MOC才重要”与”庆祝所有建造”的辩论</li>
+<li><strong>导师文化</strong>：社区中的大多数知名人物积极努力提升他人——精英主义指控很少持续</li>
+</ul>
+<h3 id="商业化辩论">商业化辩论<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#商业化辩论" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>随着乐高从爱好发展为行业：</p>
+<ul>
+<li><strong>付费委托</strong>：专业建造者获得企业客户的高薪工作</li>
+<li><strong>影响者营销</strong>：乐高套装免费发送给顶级YouTuber</li>
+<li><strong>社区与公司</strong>：AFOL与乐高官方之间有时紧张的关系</li>
+<li><strong>“出售”担忧</strong>：一些人认为商业利益削弱了业余精神</li>
+</ul>
+<h2 id="社区的治愈和社会方面">社区的治愈和社会方面<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区的治愈和社会方面" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="心理健康联系">心理健康联系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#心理健康联系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>对于许多AFOL来说，乐高不仅仅是一种爱好：</p>
+<ul>
+<li><strong>正念活动</strong>：专注的砖块连接诱导流动状态</li>
+<li><strong>焦虑管理</strong>：有形、可预测的世界中的控制感</li>
+<li><strong>抑郁支持</strong>：在困难时期建造提供了目标</li>
+<li><strong>神经多样性优势</strong>：许多自闭症和多动症AFOL发现乐高调节得很好</li>
+</ul>
+<h3 id="社区支持网络">社区支持网络<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#社区支持网络" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>当建造者经历困难时，社区会响应：</p>
+<ul>
+<li><strong>GoFundMe活动</strong>：用于医疗费用、住房紧急情况</li>
+<li><strong>零件驱动器</strong>：当收藏因火灾或洪水丢失时</li>
+<li><strong>虚拟签到</strong>：当有人长时间离线时，Discord群组会注意到</li>
+<li><strong>专业推荐</strong>：工作推荐、职业建议、创业建议</li>
+</ul>
+<h2 id="下一代倡议">下一代倡议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#下一代倡议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="青年外展">青年外展<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#青年外展" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>社区积极培养年轻建造者：</p>
+<ul>
+<li><strong>Jr. FIRST LEGO League</strong>：AFOL广泛担任评委和导师</li>
+<li><strong>学校项目</strong>：课堂工作坊、课后俱乐部</li>
+<li><strong>青年赛道</strong>：许多会议为年轻建造者提供特殊项目</li>
+<li><strong>反”太小”信息</strong>：积极鼓励儿童建造者</li>
+</ul>
+<h3 id="传承规划">传承规划<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#传承规划" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>长期社区成员考虑他们的遗产：</p>
+<ul>
+<li><strong>收藏捐赠</strong>：将砖块留给学校和LUG，而不是出售</li>
+<li><strong>导师关系</strong>：经验丰富的建造者与年轻人才正式配对</li>
+<li><strong>档案项目</strong>：保存重要MOC的文档和照片</li>
+<li><strong>知识转移</strong>：在失去之前记录老一辈的技术</li>
+</ul>
+<h2 id="相关页面">相关页面<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关页面" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/Iron-Builder竞赛" class="internal alias" data-slug="entities/Iron-Builder竞赛">Iron Builder竞赛</a></li>
+<li><a href="../Eli-Willsea" class="internal alias" data-slug="Eli-Willsea">Eli Willsea</a></li>
+<li><a href="../entities/乐高用户组(LUG)" class="internal alias" data-slug="entities/乐高用户组(LUG)">乐高用户组(LUG)</a></li>
+<li><a href="../BrickNerd社区媒体" class="internal alias" data-slug="BrickNerd社区媒体">BrickNerd社区媒体</a></li>
+<li><a href="../sources/2021-03-31-乐高社区2021年3月新闻亮点汇总" class="internal alias" data-slug="sources/2021-03-31-乐高社区2021年3月新闻亮点汇总">2021-03-31-乐高社区2021年3月新闻亮点汇总</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-313" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#乐高社区文化" data-for="乐高社区文化">乐高社区文化</a></li><li class="depth-1"><a href="#定义与概述" data-for="定义与概述">定义与概述</a></li><li class="depth-1"><a href="#项目展示图片" data-for="项目展示图片">项目展示图片</a></li><li class="depth-2"><a href="#社区媒体生态" data-for="社区媒体生态">社区媒体生态</a></li><li class="depth-1"><a href="#社区的关键价值观" data-for="社区的关键价值观">社区的关键价值观</a></li><li class="depth-2"><a href="#1-没有愚蠢的问题" data-for="1-没有愚蠢的问题">1. “没有愚蠢的问题”</a></li><li class="depth-2"><a href="#2-社区高于竞争" data-for="2-社区高于竞争">2. 社区高于竞争</a></li><li class="depth-2"><a href="#3-可及性原则" data-for="3-可及性原则">3. 可及性原则</a></li><li class="depth-1"><a href="#lug文化" data-for="lug文化">LUG文化</a></li><li class="depth-2"><a href="#lug的作用" data-for="lug的作用">LUG的作用</a></li><li class="depth-2"><a href="#典型的lug会议议程" data-for="典型的lug会议议程">典型的LUG会议议程</a></li><li class="depth-2"><a href="#lug治理" data-for="lug治理">LUG治理</a></li><li class="depth-1"><a href="#会议文化" data-for="会议文化">会议文化</a></li><li class="depth-2"><a href="#全球活动生态系统" data-for="全球活动生态系统">全球活动生态系统</a></li><li class="depth-2"><a href="#大会氛围" data-for="大会氛围">“大会氛围”</a></li><li class="depth-2"><a href="#公共展览与建造者区" data-for="公共展览与建造者区">公共展览与建造者区</a></li><li class="depth-1"><a href="#数字社区" data-for="数字社区">数字社区</a></li><li class="depth-2"><a href="#flickr时代2005-2018" data-for="flickr时代2005-2018">Flickr时代（2005-2018）</a></li><li class="depth-2"><a href="#社交媒体转变2018年至今" data-for="社交媒体转变2018年至今">社交媒体转变（2018年至今）</a></li><li class="depth-2"><a href="#数字社区的挑战" data-for="数字社区的挑战">数字社区的挑战</a></li><li class="depth-1"><a href="#社区媒体生态系统" data-for="社区媒体生态系统">社区媒体生态系统</a></li><li class="depth-2"><a href="#bricknerd的作用" data-for="bricknerd的作用">BrickNerd的作用</a></li><li class="depth-2"><a href="#月度综述现象" data-for="月度综述现象">月度综述现象</a></li><li class="depth-2"><a href="#其他关键媒体" data-for="其他关键媒体">其他关键媒体</a></li><li class="depth-1"><a href="#建造仪式和传统" data-for="建造仪式和传统">建造仪式和传统</a></li><li class="depth-2"><a href="#砖块浴" data-for="砖块浴">”砖块浴”</a></li><li class="depth-2"><a href="#afol之夜" data-for="afol之夜">”AFOL之夜”</a></li><li class="depth-2"><a href="#展示准备仪式" data-for="展示准备仪式">展示准备仪式</a></li><li class="depth-1"><a href="#社区挑战与争议" data-for="社区挑战与争议">社区挑战与争议</a></li><li class="depth-2"><a href="#包容性紧张关系" data-for="包容性紧张关系">包容性紧张关系</a></li><li class="depth-2"><a href="#精英主义辩论" data-for="精英主义辩论">”精英主义”辩论</a></li><li class="depth-2"><a href="#商业化辩论" data-for="商业化辩论">商业化辩论</a></li><li class="depth-1"><a href="#社区的治愈和社会方面" data-for="社区的治愈和社会方面">社区的治愈和社会方面</a></li><li class="depth-2"><a href="#心理健康联系" data-for="心理健康联系">心理健康联系</a></li><li class="depth-2"><a href="#社区支持网络" data-for="社区支持网络">社区支持网络</a></li><li class="depth-1"><a href="#下一代倡议" data-for="下一代倡议">下一代倡议</a></li><li class="depth-2"><a href="#青年外展" data-for="青年外展">青年外展</a></li><li class="depth-2"><a href="#传承规划" data-for="传承规划">传承规划</a></li><li class="depth-1"><a href="#相关页面" data-for="相关页面">相关页面</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-2" class="overflow"><li><a href="../entities/Iron-Builder竞赛" class="internal">Iron Builder竞赛</a></li><li><a href="../entities/乐高搭建动机哲学" class="internal">乐高搭建动机哲学</a></li><li><a href="../entities/乐高社区寻找指南" class="internal">乐高社区寻找指南</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

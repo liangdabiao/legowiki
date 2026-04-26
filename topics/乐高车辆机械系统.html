@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>乐高车辆机械系统</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="乐高搭建合集 Wiki"/><meta property="og:title" content="乐高车辆机械系统"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="乐高车辆机械系统"/><meta name="twitter:description" content="乐高车辆机械系统 从基础驱动轴到高级悬挂和转向系统的完整车辆机械设计知识 概述 乐高车辆的机械设计涵盖三个核心系统：驱动系统（传递动力到车轮）、悬挂系统（适应不平地形并保持牵引力）和转向系统（控制车辆行驶方向）。这三个系统相互关联，需要综合考虑设计。简单的车辆可能只有驱动系统，而复杂的越野模型则需要同时具备高性能的悬挂和转向系统。本主题涵盖从动轴设计、各种悬挂类型、转向几何到履带车辆的完整知识体系。 核心知识点 驱动轴基础 任何轮式车辆的轴都可以同时被悬挂、驱动和转向。一个被驱动的轴是一种将两个车轮连接起来同时将驱动力从底盘传递给它们的机构。动力通常从纵向的传动轴接收，该轴垂直于车轴。连接这两..."/><meta property="og:description" content="乐高车辆机械系统 从基础驱动轴到高级悬挂和转向系统的完整车辆机械设计知识 概述 乐高车辆的机械设计涵盖三个核心系统：驱动系统（传递动力到车轮）、悬挂系统（适应不平地形并保持牵引力）和转向系统（控制车辆行驶方向）。这三个系统相互关联，需要综合考虑设计。简单的车辆可能只有驱动系统，而复杂的越野模型则需要同时具备高性能的悬挂和转向系统。本主题涵盖从动轴设计、各种悬挂类型、转向几何到履带车辆的完整知识体系。 核心知识点 驱动轴基础 任何轮式车辆的轴都可以同时被悬挂、驱动和转向。一个被驱动的轴是一种将两个车轮连接起来同时将驱动力从底盘传递给它们的机构。动力通常从纵向的传动轴接收，该轴垂直于车轴。连接这两..."/><meta property="og:image:alt" content="乐高车辆机械系统 从基础驱动轴到高级悬挂和转向系统的完整车辆机械设计知识 概述 乐高车辆的机械设计涵盖三个核心系统：驱动系统（传递动力到车轮）、悬挂系统（适应不平地形并保持牵引力）和转向系统（控制车辆行驶方向）。这三个系统相互关联，需要综合考虑设计。简单的车辆可能只有驱动系统，而复杂的越野模型则需要同时具备高性能的悬挂和转向系统。本主题涵盖从动轴设计、各种悬挂类型、转向几何到履带车辆的完整知识体系。 核心知识点 驱动轴基础 任何轮式车辆的轴都可以同时被悬挂、驱动和转向。一个被驱动的轴是一种将两个车轮连接起来同时将驱动力从底盘传递给它们的机构。动力通常从纵向的传动轴接收，该轴垂直于车轴。连接这两..."/><meta property="og:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://https://lego-wiki.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="https://lego-wiki.pages.dev"/><meta property="og:url" content="https://https//lego-wiki.pages.dev/topics/乐高车辆机械系统"/><meta property="twitter:url" content="https://https//lego-wiki.pages.dev/topics/乐高车辆机械系统"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="乐高车辆机械系统 从基础驱动轴到高级悬挂和转向系统的完整车辆机械设计知识 概述 乐高车辆的机械设计涵盖三个核心系统：驱动系统（传递动力到车轮）、悬挂系统（适应不平地形并保持牵引力）和转向系统（控制车辆行驶方向）。这三个系统相互关联，需要综合考虑设计。简单的车辆可能只有驱动系统，而复杂的越野模型则需要同时具备高性能的悬挂和转向系统。本主题涵盖从动轴设计、各种悬挂类型、转向几何到履带车辆的完整知识体系。 核心知识点 驱动轴基础 任何轮式车辆的轴都可以同时被悬挂、驱动和转向。一个被驱动的轴是一种将两个车轮连接起来同时将驱动力从底盘传递给它们的机构。动力通常从纵向的传动轴接收，该轴垂直于车轴。连接这两..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXGxlZ28tbGxtLXdpa2lcXHF1YXJ0elxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://https://lego-wiki.pages.dev/index.xml"/></head><body data-slug="topics/乐高车辆机械系统"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">乐高搭建合集 Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1479"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1479" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../topics/">topics</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>乐高车辆机械系统</a></div></nav><h1 class="article-title">乐高车辆机械系统</h1><p show-comma="true" class="content-meta"><time datetime="2026-04-24T16:00:00.000Z">2026年4月25日</time><span>31分钟阅读</span></p><ul class="tags"><li><a href="../tags/乐高" class="internal tag-link">乐高</a></li><li><a href="../tags/车辆" class="internal tag-link">车辆</a></li><li><a href="../tags/悬挂系统" class="internal tag-link">悬挂系统</a></li><li><a href="../tags/转向系统" class="internal tag-link">转向系统</a></li><li><a href="../tags/履带车辆" class="internal tag-link">履带车辆</a></li><li><a href="../tags/传动系统" class="internal tag-link">传动系统</a></li><li><a href="../tags/门轴" class="internal tag-link">门轴</a></li></ul></div></div><article class="popover-hint"><h1 id="乐高车辆机械系统">乐高车辆机械系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#乐高车辆机械系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>从基础驱动轴到高级悬挂和转向系统的完整车辆机械设计知识</p>
+</blockquote>
+<h2 id="概述">概述<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#概述" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>乐高车辆的机械设计涵盖三个核心系统：驱动系统（传递动力到车轮）、悬挂系统（适应不平地形并保持牵引力）和转向系统（控制车辆行驶方向）。这三个系统相互关联，需要综合考虑设计。简单的车辆可能只有驱动系统，而复杂的越野模型则需要同时具备高性能的悬挂和转向系统。本主题涵盖从动轴设计、各种悬挂类型、转向几何到履带车辆的完整知识体系。</p>
+<h2 id="核心知识点">核心知识点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心知识点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="驱动轴基础">驱动轴基础<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#驱动轴基础" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>任何轮式车辆的轴都可以同时被悬挂、驱动和转向。一个被驱动的轴是一种将两个车轮连接起来同时将驱动力从底盘传递给它们的机构。动力通常从纵向的传动轴接收，该轴垂直于车轴。连接这两个元件是必要的，一对锥齿轮是最简单的解决方案。</p>
+<p><strong>实际设计考虑：</strong></p>
+<ul>
+<li>锥齿轮在高扭矩下容易跳齿</li>
+<li>差速器是更好的解决方案，特别是如果支撑在适当的结构内</li>
+<li>旋钮齿轮（knob gears）由于其设计，极不可能跳齿</li>
+<li>使用5×7无凸点框架支撑差速器可以提供额外的刚度</li>
+</ul>
+<p><strong>两种常见解决方案：</strong></p>
+<ol>
+<li><strong>差速器方案：</strong> 使用差速齿轮，允许左右车轮以不同速度旋转，改善转向性能</li>
+<li><strong>旋钮齿轮方案：</strong> 使用一对旋钮齿轮，极端坚固，适合高扭矩应用，但左右车轮锁定同速，转向性能差</li>
+</ol>
+<h3 id="悬挂系统概念与分类">悬挂系统概念与分类<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#悬挂系统概念与分类" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>悬挂是一套连杆机构，将车辆的底盘连接到车轮。其主要目的是保持所有车轮与地面持续接触，从而确保车辆的稳定性和适当的牵引力。悬挂还可以隔离底盘免受地面产生的冲击和振动——但这实际上是它的次要功能，甚至并非所有类型的悬挂都具备。</p>
+<p><strong>支点原理：</strong>
+为了保持稳定，车辆需要至少三个点支撑。因此，有四个车轮的车辆可以有一个悬挂轴和一个未悬挂轴，以获得三个支点。六个车轮的车辆如果所有三个轴都悬挂，也将有三个支点。</p>
+<p><strong>独立 vs 依赖悬挂：</strong></p>
+<ul>
+<li><strong>独立悬挂（Independent）：</strong> 给定轴上的一个车轮可以移动而不影响另一个车轮。每个车轮独立应对障碍物。</li>
+<li><strong>依赖悬挂（Dependent）：</strong> 不可能移动轴上的一个车轮而不影响另一个车轮。当一个车轮上升时，另一个下降，反之亦然。</li>
+</ul>
+<p><strong>弹性悬挂 vs 刚性悬挂：</strong></p>
+<ul>
+<li><strong>弹性悬挂（Sprung）：</strong> 底盘由连接到给定轴的弹性元件支撑，来自轴的冲击被部分吸收</li>
+<li><strong>刚性悬挂（Unsprung）：</strong> 底盘由给定轴直接支撑，来自轴的冲击完全传递到底盘</li>
+</ul>
+<h3 id="悬挂类型详解">悬挂类型详解<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#悬挂类型详解" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="双叉臂独立悬挂">双叉臂独立悬挂<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#双叉臂独立悬挂" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>这是最先进的悬挂类型之一。每个转向臂悬挂在四个平行杠杆上，允许其相对于底盘上下移动，同时保持车轮处于垂直位置。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>就稳定性和牵引力而言是最佳悬挂类型</li>
+<li>车轮在所有时间都保持其方向</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>宽度大</li>
+<li>结构相对脆弱</li>
+</ul>
+<p><strong>注意：</strong> 可以对两个车轮使用相同的弹性元件来支撑悬挂臂，但这会使悬挂变成依赖的——导致一个车轮上升而另一个下降。</p>
+<h4 id="tatra型悬挂摆动臂悬挂">Tatra型悬挂（摆动臂悬挂）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tatra型悬挂摆动臂悬挂" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>由Tatra公司开发并获得专利，该公司几乎完全使用它。Tatra型悬挂是独立悬挂的更简单变体，每个车轮仅使用两个杠杆作为悬挂，并始终保持主轴垂直于悬挂臂。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li>车轮的方向在应对障碍物时会改变</li>
+<li>默认情况下车轮倾斜，提供额外的离地间隙</li>
+<li>这种”弓形”外观可能被误认为是损坏或翘曲</li>
+</ul>
+<p><strong>优点：</strong></p>
+<ul>
+<li>比典型的独立悬挂更简单、更坚固</li>
+<li>在崎岖地形上表现非常出色（Tatra越野卡车堪称传奇）</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>由于车轮方向不断变化，牵引力略差</li>
+<li>侧向稳定性较差</li>
+<li>此悬架需要带有圆形轮廓的轮胎（气球轮胎）来保持良好的牵引力</li>
+</ul>
+<h4 id="摆式悬挂pendular-suspension">摆式悬挂（Pendular Suspension）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#摆式悬挂pendular-suspension" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>这是最简单和最坚固的悬挂类型：它允许轴在单个点上来回摆动，就像钟摆一样。由于它只是一个实心元件，它可以非常窄，并且只需几个零件即可构建。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>最简单和最坚固的悬挂类型</li>
+<li>可以非常窄</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>无弹性，冲击直接传递到底盘</li>
+<li>在底盘中占用大量空间，需要模型有大间隙才能适应</li>
+<li>通常需要减震器或其他弹性元件来保持稳定（除非您安排车辆的悬挂轴以提供三个或更多支点）</li>
+<li>穿过它的纵向轴也是将驱动力从底盘传递到悬挂的唯一方法——因此该悬挂安装在传动轴上并对其施压，产生额外的摩擦</li>
+</ul>
+<p><strong>工作原理：</strong> 当一个车轮通过障碍物上升2个凸点时，钟摆的中心轴（因此也是车辆）仅上升1个凸点。即，只有50%的车轮垂直行程传递到车辆。</p>
+<p><strong>带转盘的摆式悬挂改进：</strong> 使用Technic转盘将悬挂连接到底盘。然后转盘支撑车辆的重量，而传动轴可以几乎无负担地穿过转盘中间。</p>
+<h4 id="拖臂悬挂浮动轴悬挂">拖臂悬挂（浮动轴悬挂）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#拖臂悬挂浮动轴悬挂" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>浮动轴悬挂是摆式悬挂的弹性变体。它是一个单一的实心元件，与底盘完全没有刚性连接；相反，它通过多个连杆连接到底盘，这些连杆形成一个连杆机构，允许它上下移动并向两侧倾斜。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>结合了摆式悬挂的所有优点，同时具有弹性且通常更稳定</li>
+<li>可以像常规摆式悬挂一样窄和坚固</li>
+<li>不按压传动轴</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>由于它与底盘之间的连杆机构，在底盘中占用极大空间</li>
+</ul>
+<p><strong>设计变体：</strong> 简单变体使用四个连杆和实际轴上方的两个独立悬挂臂，这些悬挂臂需要由一些弹性元件支撑。它还使用带有单个万向节的传动轴，以保持轴与底盘对齐。</p>
+<h3 id="门轴portal-axles">门轴（Portal Axles）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#门轴portal-axles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>门轴是车轮上带有齿轮轮毂的轴，既增加了离地间隙又增加了传动系统的齿轮减速。实际上，任何轴（包括转向轴）都可以有齿轮轮毂并以增加宽度为代价成为门轴。</p>
+<p><strong>工作原理：</strong></p>
+<ul>
+<li>最受欢迎的是24齿和8齿齿轮组合，提供3:1的齿轮减速</li>
+<li>3:1的齿轮减速不仅意味着车轮上的扭矩增加三倍，还意味着传动系统的其他部分仅处理整体负载的三分之一</li>
+<li>这对于转向轴非常有用，因为它允许我们使用万向节，否则它们可能会被负载损坏</li>
+</ul>
+<p><strong>乐高轮毂：</strong>
+最简单的构建窄而坚固的齿轮轮毂的方法涉及现成的乐高齿轮轮毂外壳：#92908零件，插入#92909以支撑车轮。这种非常方便的组合称为乐高轮毂。</p>
+<h3 id="转向系统设计">转向系统设计<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#转向系统设计" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="基本转向系统">基本转向系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#基本转向系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>转向系统中的核心部件：</p>
+<ul>
+<li><strong>转向轴（Steering Shaft）：</strong> 将方向盘或电机连接到齿条与小齿轮组的小齿轮</li>
+<li><strong>齿条与小齿轮组（Rack-and-pinion Gearset）：</strong> 由小齿轮（通常是8齿齿轮）和下方的齿条组成，将旋转运动转换为线性运动</li>
+<li><strong>转向臂（Steering Arms）：</strong> 围绕与底盘的连接旋转，其旋转由齿条控制</li>
+<li><strong>主轴（Spindles）：</strong> 转向臂中的轴，车轮安装在其上</li>
+</ul>
+<p><strong>常见问题：齿条脱离</strong>
+当转向臂转动时，连接它们到齿条的销实际上沿着圆周的一部分运动。这导致齿条在两个维度上移动：不仅左右移动，还前后移动。只有横向移动是期望的，前后位移可能导致齿条与小齿轮脱离。</p>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li><strong>双小齿轮：</strong> 使用两个小齿轮，这样当齿条远离一个时，它会与另一个啮合</li>
+<li><strong>居中放置小齿轮：</strong> 将小齿轮放置在齿条前后运动路径的中间</li>
+<li><strong>三件式拉杆：</strong> 拉杆由三部分组成，中间长部分（带齿条）和两侧短部分，通过销连接。短部分枢转以适应转向臂的旋转，并将中间部分的前后行程减少到零</li>
+<li><strong>杠杆代替齿条：</strong> 使用两个旋钮轮和一个短杠杆将运动从转向轴传递到拉杆</li>
+</ol>
+<h4 id="回中转向return-to-center-steering">回中转向（Return-to-Center Steering）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#回中转向return-to-center-steering" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>回中转向是一种在系统释放时将转向系统返回到中心（直行）位置的机制。这种机制最好放置在转向系统和控制它的电机之间，这种”自居中”设计补充了遥控器的使用。</p>
+<p><strong>实现方法：</strong></p>
+<ol>
+<li>
+<p><strong>专用曲棍球弹簧零件：</strong> 使用罕见的专业零件，通常称为曲棍球弹簧，内部带有弹簧。可以连接到PF中型电机，每次电机停止时，它会将电机驱动回中心位置。</p>
+</li>
+<li>
+<p><strong>橡皮筋回中机制：</strong> 使用橡皮筋挤压两个梁到坐在转向轴上的连接器侧面。当电机开始旋转轴时，连接器将梁推开。如果橡皮筋张紧足够，它会迅速停止连接器，当电机停止时，它会将梁挤回一起，将连接器和轴返回到中心位置。</p>
+</li>
+</ol>
+<p><strong>优缺点：</strong></p>
+<ul>
+<li><strong>优点：</strong> 工作快速，简化模型控制，与基本Power Functions遥控器完美配合</li>
+<li><strong>缺点：</strong> 不允许精确操纵，因为只有三个可能位置；更适合快速模型，而不是需要精确转向的慢速模型</li>
+</ul>
+<p><strong>最佳实践：</strong> 大多数非专门为高速建造的模型使用常规转向系统效果更好，该系统允许精确调整行驶方向。根据经验，PF中型电机减速到9:1齿轮比为常规转向系统提供了最佳的速度/精度平衡。</p>
+<h4 id="阿克曼转向几何ackermann-steering-geometry">阿克曼转向几何（Ackermann Steering Geometry）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#阿克曼转向几何ackermann-steering-geometry" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>当轮式车辆转弯时，其内侧和外侧车轮遵循不同半径的圆，因为车辆的宽度将它们分开。如果内侧车轮遵循r1半径的圆，则外侧车轮遵循r2半径的圆（等于r1加上车辆宽度）。</p>
+<p><strong>问题：</strong> 常规转向轴以完全相同的角度转动左轮和右轮，这意味着没有一个车轮完全遵循其适当的半径。这会产生额外的摩擦和轮胎磨损。</p>
+<p><strong>解决方案：</strong> 阿克曼转向几何通过以不同角度转动车轮来纠正这一点。更具体地说，它转动它们使得它们垂直于车辆转弯半径的中心。</p>
+<p><strong>实现方法：</strong></p>
+<ol>
+<li>
+<p><strong>特殊转向臂（官方乐高方式）：</strong> 修改转向臂使其指向后轴的中心。官方乐高Technic超级跑车8865和8880套装都使用这种设计，两者都使用具有偏移枢轴点的特殊转向臂。这些现在都是罕见的零件，但我们可以使用其他零件构建自己的自定义转向臂。</p>
+</li>
+<li>
+<p><strong>三件式拉杆：</strong> 使用具有更长中间部分和两个成角度设置的侧部的三件式拉杆。这种拉杆行程很小，应放置在前轴前面。</p>
+</li>
+</ol>
+<p><strong>注意事项：</strong></p>
+<ul>
+<li>转向臂不指向后轴中心，因此很难看出是否实现了正确的几何形状</li>
+<li>此解决方案在拉杆中施加非常高的力</li>
+<li>中心齿条需要被引导以保持垂直于底盘</li>
+</ul>
+<p><strong>在乐高模型中的重要性：</strong> 对于乐高车辆，除了非常大和重的模型外，这种额外的摩擦和轮胎磨损可以忽略不计。阿克曼几何带来的操控改进是有利的，但只有在具有显着转向锁的大型车辆中才明显。</p>
+<h4 id="轴的收敛convergence-of-axles">轴的收敛（Convergence of Axles）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#轴的收敛convergence-of-axles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>在讨论阿克曼转向几何时，我们了解到每辆车都有其转弯半径中心。当车轮转动时，该中心是垂直于每个车轮的线相交的地方（如果使用常规转向几何，则忽略外侧转向轮）。</p>
+<p><strong>收敛线：</strong> 考虑一条指向中心并同时垂直于车辆底盘的线。这条线正好穿过后固定轴。无论转向轮转动多少，这条线总是在同一位置穿过底盘——我们称之为收敛线。</p>
+<p><strong>多转向轴系统：</strong></p>
+<p>当我们有多个转向轴时，收敛线有助于确定它们之间的适当间距以及转向锁的差异。</p>
+<p><strong>前后转向轴：</strong> 如果车辆前后都有转向轴，它们应该对称于收敛线，这意味着前轴应该以与后轴相反的方向转向。</p>
+<p><strong>前部多个转向轴：</strong> 计算两个前转向轴之间角度关系的方法。例如，假设角度为45度。前轴距离收敛线13个凸点，中间轴距离7个凸点。我们需要计算较短和较长距离之间的关系：</p>
+<p>7个凸点 / 13个凸点 = 0.54</p>
+<p>接下来，我们需要找到这个关系的反正切：
+arctan(0.54) ≈ 28度</p>
+<p>我们刚刚计算出中间轴应该转向的角度，并且我们知道前轴的角度是45度。现在我们需要比较这些角度以了解角度之间的差异，并将其转化为转向系统中的齿轮传动：</p>
+<p>28度 / 45度 = 0.622</p>
+<p>我们可以将结果四舍五入到0.6。这意味着中间轴应该以0.6的比例转向，或者约为前轴角度的60%。</p>
+<p><strong>实现不同转向锁的方法：</strong></p>
+<ol>
+<li><strong>单转向轴带不同尺寸小齿轮：</strong> 使用单个转向轴，但在每个齿条上使用不同尺寸的小齿轮。例如，如果前轴使用20齿齿轮，则中间轴应使用12齿齿轮。</li>
+<li><strong>双转向轴带齿轮传动：</strong> 两个轴上使用相同的小齿轮，但两个转向轴之间有齿轮传动。</li>
+</ol>
+<h3 id="履带车辆系统">履带车辆系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#履带车辆系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>履带车辆在覆盖崎岖地形方面优于轮式车辆。可以说，履带允许坦克和建筑车辆无论走到哪里都”携带自己的道路”。</p>
+<h4 id="履带类型">履带类型<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#履带类型" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>橡胶履带：</strong></p>
+<ul>
+<li>由单个实心橡胶环制成</li>
+<li>有34个链节，宽度略小于3个凸点</li>
+<li>凭借其深胎面，提供出色的牵引力</li>
+<li>必须使用一种称为轮毂的特殊链轮驱动</li>
+<li>需要两个相距13个凸点的轮毂才能完全拉伸</li>
+</ul>
+<p><strong>优点：</strong> 它们是单个牢不可破的环，提供极佳的牵引力，驾驶时产生的噪音最小
+<strong>缺点：</strong> 它们的长度有限且固定，链轮只有一种尺寸可用，橡胶随着时间推移变得越来越缺乏弹性</p>
+<p><strong>硬塑料履带：</strong></p>
+<p>硬塑料履带（也称为实心履带）是相互连接的单个塑料链环。它们的长度可以轻松调整。</p>
+<p><strong>旧款硬塑料履带：</strong></p>
+<ul>
+<li>宽度略小于3个凸点</li>
+<li>15个链节长度等于13个凸点</li>
+<li>主要为黑色</li>
+<li>结构类似于乐高链条</li>
+<li>单个链节在齿轮上占据两个齿</li>
+</ul>
+<p><strong>新款硬塑料履带：</strong></p>
+<ul>
+<li>宽度略小于5个凸点</li>
+<li>8个链节长度等于13个凸点（与15个旧款链节相同）</li>
+<li>单个新款链节因此等于1.875个旧款链节</li>
+<li>主要由深灰色链节制成，黑色和金属银色版本也可用</li>
+<li>每个链节带有两个针孔，允许修改</li>
+<li>不能由常规Technic齿轮驱动，相反，它们使用特殊的链轮（大链轮最多可缠绕10个链节，小链轮最多6个链节）</li>
+</ul>
+<p><strong>硬塑料履带的优缺点：</strong></p>
+<ul>
+<li><strong>优点：</strong> 长度可调，看起来比橡胶履带更逼真，可以由更多种类的链轮驱动</li>
+<li><strong>缺点：</strong> 牵引力差，容易散开（尤其是旧款），难以获得最佳张力（尤其是新款），驾驶时噪音大（尤其是新款）</li>
+</ul>
+<h4 id="履带轮系统">履带轮系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#履带轮系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>车轮对于履带车辆的重要性不亚于汽车或卡车。首先，它们为履带提供动力并防止它们脱落。其次，它们可以被悬挂以提高车辆的浮动性——浮动性描述了悬挂处理障碍物的程度。良好适应崎岖地形的悬架提供了良好的浮动性，减少了车辆移动时传递给它的冲击。</p>
+<p><strong>基本双链轮系统：</strong> 最简单的轮系统包括每个履带两个链轮。通常，大约一半的这样的轮子与履带接触，比系统中的任何其他轮子都多——这就是为什么这些轮子是驱动履带的轮子很重要。通常只有一个链轮实际上被驱动，它通常是后一个，因为将推进系统放在车辆后部很方便。</p>
+<p><strong>带负重轮的系统：</strong> 更先进的轮系统在车辆底部包括负重轮。负重轮可以以任何数量使用，它们不被驱动，并且可以容易地悬挂。它们通常位于比链轮更靠近地面的位置，并且它们支撑车辆的重量。</p>
+<p><strong>带托带轮的系统：</strong> 最复杂的轮系统还包括托带轮。它们既不被驱动也不悬挂，它们的唯一功能是支撑履带的上部。托带轮可以与履带保持最小接触，事实上，它们甚至根本不需要旋转——只要履带可以在它们上滑动就足够了。</p>
+<p><strong>谢尔曼坦克示例：</strong> 经典谢尔曼坦克上使用的系统包括两个大链轮、每个履带六个较小的负重轮和两个托带轮。注意前链轮是被驱动的，后链轮是惰轮。</p>
+<h4 id="履带悬挂系统">履带悬挂系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#履带悬挂系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Bogies（平衡悬挂）：</strong>
+Bogie是最简单的履带悬挂类型。它只是一个梁，两端各有一个负重轮；该梁围绕连接到车辆的中心轴自由旋转。</p>
+<p><strong>工作原理：</strong> 当bogie上的负重轮上下移动时，只有一半的行程传递到bogie的中心轴——例如，当一个车轮向上移动2个凸点时，轴将仅向上移动1个。因此，bogie提供相当好的浮动性，但它们不会减少冲击。</p>
+<p><strong>注意：</strong> Bogie的基本原理是只有50%的负重轮垂直行程传递到车辆。但请注意，只有当障碍物短于整个bogie的长度时——即短于两个负重轮的跨度时，该原理才成立。</p>
+<p><strong>带减震器的拖臂悬挂：</strong>
+拖臂用于更先进的悬挂系统，其中每个负重轮位于臂的末端，并由减震器（或另一个弹性元件）支撑抵靠车辆的重量。由于大多数履带车辆通常具有较低的轮廓，6.5L减震器比其较长的变体更适合大多数履带车辆。</p>
+<p><strong>设计考虑因素：</strong></p>
+<ul>
+<li>履带的旋转方向对拖臂悬挂很敏感</li>
+<li>履带总是在一个方向上比反向旋转更自由</li>
+<li>臂位于负重轮前面</li>
+</ul>
+<p><strong>拖臂变体类型：</strong></p>
+<ol>
+<li><strong>24齿齿轮系统：</strong> 仅适用于24齿齿轮，不是那么柔软，但占用很少的垂直空间，当您需要负重轮彼此非常靠近时这很有帮助</li>
+<li><strong>紧凑型轮系统：</strong> 另一种适用于所有类型车轮的紧凑型设置，包括适用于新款履带系统的车轮。它允许更低的整体轮廓，但需要负重轮间隔更远</li>
+</ol>
+<p><strong>负载分布注意事项：</strong> 履带中的第一个和最后一个负重轮通常比中间的负重轮承受更多的负载。因此，对这些车轮使用比中间车轮更硬的减震器是个好主意。还应考虑车辆的重量分布（前重、中心重或后重）。</p>
+<p><strong>带扭杆的拖臂悬挂：</strong>
+减震器效率高但体积大；它们的长度会迫使我们将车辆建造得比我们原本需要的更高。幸运的是，在建造拖臂悬挂时，有一个非常有吸引力的替代方案：扭杆。</p>
+<p>扭杆是一个长的、略微弹性的元件，垂直于车辆的船体放置。杆的一端锁定在底盘上，使其无法旋转。另一端连接到拖臂，拖臂的另一端有一个负重轮，它与臂一起旋转。</p>
+<p>因此，当负重轮遇到使其上升的障碍物时，拖臂将围绕轴摆动，使其稍微扭曲。障碍物通过后，轴将解扭，将臂和车轮返回到初始位置。</p>
+<p><strong>乐高扭杆：</strong> 所有乐高轴（除了非常短的轴）都足够有弹性，可以用作扭杆。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>仅需要常见零件</li>
+<li>可以通过使用更短或更长的轴或简单地改变轴锁定到底盘的点来调整硬度</li>
+<li>与减震器不同，利用履带内部最小的空间</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>在船体底部占用1个凸点的垂直空间</li>
+<li>这个空间如此密集地充满轴，通常不可能将其用于任何其他用途</li>
+<li>对于轻型模型效果不佳。如果每个负重轮的平均负载小于100克，这种悬挂的效果几乎不明显</li>
+</ul>
+<p><strong>耐久性：</strong> 扭曲乐高轴可能看起来有风险，但它们令人惊讶地抗损坏。在总重量约3.5公斤的模型中使用8L轴作为扭杆，每个扭杆平均处理近0.25公斤的负载，在越过障碍物时负载更大。即使模型在崎岖地形上经过大量测试后，轴也处于原始状态。</p>
+<h2 id="相关实体">相关实体<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关实体" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/悬挂系统" class="internal alias" data-slug="entities/悬挂系统">悬挂系统</a></li>
+<li><a href="../entities/转向系统" class="internal alias" data-slug="entities/转向系统">转向系统</a></li>
+<li><a href="../entities/履带车辆" class="internal alias" data-slug="entities/履带车辆">履带车辆</a></li>
+<li><a href="../entities/乐高轮胎与牵引力" class="internal alias" data-slug="entities/乐高轮胎与牵引力">乐高轮胎与牵引力</a></li>
+<li><a href="../entities/差速器" class="internal alias" data-slug="entities/差速器">差速器</a></li>
+<li><a href="../entities/万向节" class="internal alias" data-slug="entities/万向节">万向节</a></li>
+<li><a href="../entities/传动系统" class="internal alias" data-slug="entities/传动系统">传动系统</a></li>
+<li><a href="../entities/扭矩" class="internal alias" data-slug="entities/扭矩">扭矩</a></li>
+</ul>
+<h2 id="相关图片">相关图片<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关图片" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="驱动轴与悬挂基础">驱动轴与悬挂基础<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#驱动轴与悬挂基础" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://liangdabiao.com/lego/images/ed6bce80f34bdc603325238c2808230486912007b439811e8d72e725c524c9c8.jpg" alt="简单驱动轴"/>
+<em>简单驱动轴，也称为活轴的样子</em></p>
+<p><img src="https://liangdabiao.com/lego/images/6a7d42716b465168ed4396d68563a7408dd4b66c062b581c826d24c4fb9e70f5.jpg" alt="双驱动轴旋钮齿轮"/>
+<em>相同的简单驱动轴，使用一对旋钮齿轮代替差速器</em></p>
+<p><img src="https://liangdabiao.com/lego/images/90940076d2999f3394bfff7b3c372cadd33c57ddd6fd105f07c30bef14428932.jpg" alt="四车轮带一个悬挂轴底盘"/>
+<em>带有四个车轮的简单底盘，包括一个悬挂轴</em></p>
+<h3 id="悬挂类型">悬挂类型<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#悬挂类型" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://liangdabiao.com/lego/images/0cc34a8e74235ff3b12d7b6ecd344861228c0007de962b13060923c104ef6475.jpg" alt="Tatra型悬挂默认倾斜位置"/>
+<em>Tatra型悬挂的默认位置提供额外的离地间隙</em></p>
+<p><img src="https://liangdabiao.com/lego/images/a34286c9a6d4a18ebc4e48c3f492f653ee54f7e380b03f022b4d8ebef94985c0.jpg" alt="摆式悬挂障碍物通过"/>
+<em>摆式悬挂通过一个障碍物，注意底盘升高了50%</em></p>
+<p><img src="https://liangdabiao.com/lego/images/15c9f8fad431a8dbe93d7b17a18fbcceea7fdc547e93a9be4d70bca84cf06c3d.jpg" alt="带减震器稳定的摆式悬挂"/>
+<em>用一对减震器稳定的摆式悬挂</em></p>
+<p><img src="https://liangdabiao.com/lego/images/f6e51a6716728b10d2b67d41bdc0c25d989a436c7c2c65e5c3a0357e1b000868.jpg" alt="浮动轴悬挂障碍物通过"/>
+<em>浮动轴通过障碍物，注意所有四个连杆的方向都改变了，而底盘的方向保持不变</em></p>
+<h3 id="门轴与转向系统">门轴与转向系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#门轴与转向系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://liangdabiao.com/lego/images/49cc754a0f48a19de4d7cf2289fdf3c7b0041e955dfda9ae1b39d0df7dc315ff.jpg" alt="门轴示例"/>
+<em>常规轴（左）和门轴（右）</em></p>
+<p><img src="https://liangdabiao.com/lego/images/70f9a713a61bdf0bf450544f4f78c3caa5093a48be8a0fa4a91f514f7e44985b.jpg" alt="典型转向机构"/>
+<em>典型的乐高转向机构</em></p>
+<p><img src="https://liangdabiao.com/lego/images/d873e25fcaf19f71483a309a5b641e6e0c0ab7175471b82c2b276a04fee3a9f8.jpg" alt="三件式拉杆零行程"/>
+<em>极端左右位置带三件式拉杆的转向机构，注意中间部分纵向行程为零</em></p>
+<p><img src="https://liangdabiao.com/lego/images/8aeec02d50837d112dce1bd055341bd6fa5dab77a51885965a6e9d2e21b115b6.jpg" alt="阿克曼几何原理"/>
+<em>不同轮胎轮廓对比，对阿克曼转向很重要</em></p>
+<h3 id="履带车辆系统-1">履带车辆系统<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#履带车辆系统-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://liangdabiao.com/lego/images/df5dd33a839ccb9921829572f7470fc6f5f52794ad377164b8a31975464dd207.jpg" alt="大型Technic履带和轮毂"/>
+<em>大型Technic履带和两个Technic履带轮毂</em></p>
+<p><img src="https://liangdabiao.com/lego/images/170e026ca3e0528c78fafa2098e699eaba3817dba04a3ecf1bff404fc4ee46c2.jpg" alt="新旧硬塑料履带"/>
+<em>旧款15链节长履带和新款8链节长履带都是13个凸点长</em></p>
+<p><img src="https://liangdabiao.com/lego/images/e08c20dfccbd5a7f50cd773a9eb2c14a9b815e6f3bac222eca9899a01fa2d6aa.jpg" alt="Bogies工作原理"/>
+<em>Bogie工作原理，一个负重轮升高2个凸点，但中心轴仅升高1个凸点</em></p>
+<p><img src="https://liangdabiao.com/lego/images/e67461e2b91209c8bcf83110d9bf2028967704149fd40dfa05fd5d435fda488e.jpg" alt="扭杆基本方案"/>
+<em>扭杆的基本方案，黑色8L轴用作扭杆</em></p>
+<h2 id="相关素材">相关素材<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关素材" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/2026-04-25-乐高搭建合集-卷四-科技指南" class="internal alias" data-slug="sources/2026-04-25-乐高搭建合集-卷四-科技指南">2026-04-25-乐高搭建合集-卷四-科技指南</a></li>
+<li><a href="../sources/2026-04-25-乐高搭建合集-卷四-科技指南-续章" class="internal alias" data-slug="sources/2026-04-25-乐高搭建合集-卷四-科技指南-续章">2026-04-25-乐高搭建合集-卷四-科技指南-续章</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-715" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#乐高车辆机械系统" data-for="乐高车辆机械系统">乐高车辆机械系统</a></li><li class="depth-1"><a href="#概述" data-for="概述">概述</a></li><li class="depth-1"><a href="#核心知识点" data-for="核心知识点">核心知识点</a></li><li class="depth-2"><a href="#驱动轴基础" data-for="驱动轴基础">驱动轴基础</a></li><li class="depth-2"><a href="#悬挂系统概念与分类" data-for="悬挂系统概念与分类">悬挂系统概念与分类</a></li><li class="depth-2"><a href="#悬挂类型详解" data-for="悬挂类型详解">悬挂类型详解</a></li><li class="depth-2"><a href="#门轴portal-axles" data-for="门轴portal-axles">门轴（Portal Axles）</a></li><li class="depth-2"><a href="#转向系统设计" data-for="转向系统设计">转向系统设计</a></li><li class="depth-2"><a href="#履带车辆系统" data-for="履带车辆系统">履带车辆系统</a></li><li class="depth-1"><a href="#相关实体" data-for="相关实体">相关实体</a></li><li class="depth-1"><a href="#相关图片" data-for="相关图片">相关图片</a></li><li class="depth-2"><a href="#驱动轴与悬挂基础" data-for="驱动轴与悬挂基础">驱动轴与悬挂基础</a></li><li class="depth-2"><a href="#悬挂类型" data-for="悬挂类型">悬挂类型</a></li><li class="depth-2"><a href="#门轴与转向系统" data-for="门轴与转向系统">门轴与转向系统</a></li><li class="depth-2"><a href="#履带车辆系统-1" data-for="履带车辆系统-1">履带车辆系统</a></li><li class="depth-1"><a href="#相关素材" data-for="相关素材">相关素材</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-2" class="overflow"><li><a href="../" class="internal">index</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>
